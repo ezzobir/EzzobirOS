@@ -3,12 +3,12 @@
 
 let
   mybashAliases = {
+    v = "nvim";
     sv = "sudo nvim";
     fr = "nh os switch --hostname ${host} /home/${username}/ezzobiros";
     fu = "nh os switch --hostname ${host} --update /home/${username}/ezzobiros";
-    eu = "sh <(curl -L https://gitlab.com/ezzobir/ezzobiros/-/raw/main/install-ezzobiros.sh)";
     ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
-    v = "nvim";
+    eu = "sh <(curl -L https://gitlab.com/ezzobir/ezzobiros/-/raw/main/install-ezzobiros.sh)";
     cat = "bat";
     ls = "eza --icons";
     ll = "eza -lh --icons --grid --group-directories-first";
