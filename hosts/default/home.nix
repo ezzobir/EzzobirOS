@@ -76,7 +76,6 @@ in
       # settings.theme = {};
     };
   };
-  };
 
 
   # Create XDG Dirs
