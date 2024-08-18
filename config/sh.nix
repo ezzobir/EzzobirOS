@@ -98,6 +98,11 @@ in
       '';
       initExtra = ''
         fastfetch
+        # Begin Vi Mode
+        # -----------------------------------------------------
+        set -o vi
+        # -----------------------------------------------------
+        # End Vi Mode
         if [ -f $HOME/.bashrc-personal ]; then
           source $HOME/.bashrc-personal
         fi
@@ -110,14 +115,22 @@ in
       enable = true;
       # enableCompletion = true;
       loginShellInit = ''
+        set -U fish_greeting ""
         # if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
         #     exec Hyprland
         # end
       '';
       interactiveShellInit = ''
         fastfetch
+        # Begin Vi Mode
+        # -----------------------------------------------------
+        fish_vi_key_bindings
+        # -----------------------------------------------------
+        # End Vi Mode
       '';
       shellAliases = myAliases; 
+      # shellInitLast = ''
+      # '';
     };
   };
 

@@ -68,6 +68,14 @@ in
     zellij = {
       enable = true;
     };
+    yazi = {
+      enable = true;
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      # plugins = with pkgs; [];
+      # settings.theme = {};
+    };
+  };
   };
 
 
