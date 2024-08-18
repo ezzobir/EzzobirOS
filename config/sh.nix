@@ -2,25 +2,21 @@
 { config, pkgs, host, username, ... }:
 
 let
-  mybashAliases = {
-    v = "nvim";
-    sv = "sudo nvim";
-    fr = "nh os switch --hostname ${host} /home/${username}/ezzobiros";
-    fu = "nh os switch --hostname ${host} --update /home/${username}/ezzobiros";
-    ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
-    eu = "sh <(curl -L https://gitlab.com/ezzobir/ezzobiros/-/raw/main/install-ezzobiros.sh)";
-    cat = "bat";
-    ls = "eza --icons";
-    ll = "eza -lh --icons --grid --group-directories-first";
-    la = "eza -lah --icons --grid --group-directories-first";
-    ".." = "cd ..";
-  };
-  myfishAliases = {
+  myAliases = {
     # -----------------------------------------------------
     #terminal
     # -----------------------------------------------------
     c="clear";
     e="exit";
+
+    # -----------------------------------------------------
+    #nix
+    # -----------------------------------------------------
+
+    fr = "nh os switch --hostname ${host} /home/${username}/ezzobiros";
+    fu = "nh os switch --hostname ${host} --update /home/${username}/ezzobiros";
+    ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
+    eu = "sh <(curl -L https://gitlab.com/ezzobir/ezzobiros/-/raw/main/install-ezzobiros.sh)";
 
     # -----------------------------------------------------
     # vim
@@ -31,6 +27,7 @@ let
     # neovim
     # -----------------------------------------------------
     v="nvim";
+    sv = "sudo nvim";
 
     # -----------------------------------------------------
     # emacs
@@ -45,8 +42,13 @@ let
     # -----------------------------------------------------
     #see content
     # -----------------------------------------------------
-    ll="ls -Fl";
-    la="ls -FAl";
+    # ll="ls -Fl";
+    # la="ls -FAl";
+    ls = "eza --icons";
+    ll = "eza -lh --icons --grid --group-directories-first";
+    la = "eza -lah --icons --grid --group-directories-first";
+    ".." = "cd ..";
+    cat = "bat";
 
     # -----------------------------------------------------
     # EDIT CONFIG FILES
@@ -100,7 +102,7 @@ in
           source $HOME/.bashrc-personal
         fi
       '';
-      shellAliases = mybashAliases; 
+      shellAliases = myAliases; 
     };
   
     #fish
@@ -115,7 +117,7 @@ in
       interactiveShellInit = ''
         fastfetch
       '';
-      shellAliases = myfishAliases; 
+      shellAliases = myAliases; 
     };
   };
 

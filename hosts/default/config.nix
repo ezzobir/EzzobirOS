@@ -251,8 +251,6 @@ in
     curl
     killall
     eza
-    zoxide
-    jq
     cmatrix
     lolcat
     htop
@@ -268,10 +266,8 @@ in
     ncdu
     wl-clipboard
     pciutils
-    ffmpeg
     socat
     cowsay
-    ripgrep
     lshw
     bat
     pkg-config
@@ -292,6 +288,17 @@ in
     file-roller
     swaynotificationcenter
     tree
+    jq
+    poppler
+    fd
+    ripgrep
+    fzf
+    zoxide
+    imagemagick
+    ffmpeg_7-full
+    # for youtube
+    yt-dlp
+    ytfzf
     # for screenshot
     swappy grim slurp
     # sound controller
@@ -303,26 +310,26 @@ in
     # messenger apps
     # discord
     telegram-desktop
-    # # pdf readers
-    # zathura
-    # sioyek
+    # pdf readers
+    zathura
+    sioyek
     # imager viewer
     imv
     # video player
     mpv
     vlc
-    # # design
-    # obs-studio
-    # audacity
-    # inkscape
-    # gimp
-    # kdePackages.kdenlive
-    # natron
-    # # desktop publicshing
-    # onlyoffice-bin_latest
-    # libreoffice-fresh
-    # typst
-    # lyx
+    # design
+    obs-studio
+    audacity
+    inkscape
+    gimp
+    kdePackages.kdenlive
+    natron
+    # desktop publicshing
+    onlyoffice-bin_latest
+    libreoffice-fresh
+    typst
+    lyx
   ];
 
   fonts = {
