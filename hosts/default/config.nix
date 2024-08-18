@@ -243,16 +243,19 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    vim
+    git
+    # editors
+    neovide
+    # terminal utils
     wget
     curl
     killall
     eza
-    git
+    zoxide
+    jq
     cmatrix
     lolcat
     htop
-    brave
     libvirt
     lxqt.lxqt-policykit
     lm_sensors
@@ -277,7 +280,6 @@ in
     ninja
     brightnessctl
     virt-viewer
-    swappy
     appimage-run
     networkmanagerapplet
     yad
@@ -285,26 +287,42 @@ in
     playerctl
     nh
     nixfmt-rfc-style
-    # discord
-    telegram-desktop
     libvirt
     swww
-    grim
-    slurp
     file-roller
     swaynotificationcenter
-    zathura
-    sioyek
+    tree
+    # for screenshot
+    swappy grim slurp
+    # sound controller
+    pavucontrol
+    spotify
+    greetd.tuigreet
+    # browsers
+    brave
+    # messenger apps
+    # discord
+    telegram-desktop
+    # # pdf readers
+    # zathura
+    # sioyek
+    # imager viewer
     imv
+    # video player
     mpv
     vlc
-    gimp
-    pavucontrol
-    tree
-    spotify
-    neovide
-    emacs
-    greetd.tuigreet
+    # # design
+    # obs-studio
+    # audacity
+    # inkscape
+    # gimp
+    # kdePackages.kdenlive
+    # natron
+    # # desktop publicshing
+    # onlyoffice-bin_latest
+    # libreoffice-fresh
+    # typst
+    # lyx
   ];
 
   fonts = {
