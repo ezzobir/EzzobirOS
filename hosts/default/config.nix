@@ -318,18 +318,27 @@ in
     # video player
     mpv
     vlc
-    # design
-    obs-studio
-    audacity
-    inkscape
-    gimp
-    kdePackages.kdenlive
-    natron
-    # desktop publicshing
-    onlyoffice-bin_latest
-    libreoffice-fresh
-    typst
-    lyx
+    # # desktop publicshing
+    # onlyoffice-bin_latest
+    # libreoffice-fresh
+    # typst
+    # texliveFull
+    # lyx
+    # # design
+    # obs-studio
+    # audacity
+    # inkscape
+    # gimp
+    # kdePackages.kdenlive
+    # natron
+    # # math software
+    # sage
+    # R
+    # octaveFull
+    # # ai
+    # jupyter-all
+    # python3Full
+
   ];
 
   fonts = {
