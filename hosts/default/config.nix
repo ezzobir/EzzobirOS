@@ -229,11 +229,11 @@ in
         thunar-volman
       ];
     };
-    yazi = {
-      enable = true;
-      # plugins = with pkgs; [];
-      # settings.theme = {};
-    };
+      # yazi = {
+      #   enable = true;
+      #   # plugins = with pkgs; [];
+      #   # settings.theme = {};
+      # };
   };
 
   nixpkgs.config.allowUnfree = true;
