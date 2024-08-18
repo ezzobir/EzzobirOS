@@ -343,7 +343,7 @@ in
   # Services to start
   services = {
     # Map CapsLock to Esc on single press and Ctrl on when used with multiple keys.
-    services.interception-tools = {
+    interception-tools = {
       enable = true;
       plugins = [ pkgs.interception-tools-plugins.caps2esc ];
       udevmonConfig = ''
