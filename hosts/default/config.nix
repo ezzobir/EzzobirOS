@@ -216,12 +216,12 @@ in
       enableSSHSupport = true;
     };
     virt-manager.enable = true;
-    steam = {
-      enable = true;
-      gamescopeSession.enable = true;
-      remotePlay.openFirewall = true;
-      dedicatedServer.openFirewall = true;
-    };
+    # steam = {
+    #   enable = true;
+    #   gamescopeSession.enable = true;
+    #   remotePlay.openFirewall = true;
+    #   dedicatedServer.openFirewall = true;
+    # };
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
