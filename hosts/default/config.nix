@@ -13,9 +13,9 @@ in
   imports = [
     ./hardware.nix
     ./users.nix
-    # ../../modules/amd-drivers.nix
-    # ../../modules/nvidia-drivers.nix
-    # ../../modules/nvidia-prime-drivers.nix
+    ../../modules/amd-drivers.nix
+    ../../modules/nvidia-drivers.nix
+    ../../modules/nvidia-prime-drivers.nix
     ../../modules/intel-drivers.nix
     ../../modules/vm-guest-services.nix
     ../../modules/local-hardware-clock.nix
@@ -55,6 +55,7 @@ in
   stylix = {
     enable = true;
     image = ../../config/wallpapers/beautifulmountainscape.jpg;
+    # base16Scheme = "{pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yml";
     # base16Scheme = {
     #   base00 = "232136";
     #   base01 = "2a273f";
@@ -101,13 +102,13 @@ in
   };
 
   # Extra Module Options
-  # drivers.amdgpu.enable = false;
-  # drivers.nvidia.enable = false;
-  # drivers.nvidia-prime = {
-  #   enable = false;
-  #   intelBusID = "";
-  #   nvidiaBusID = "";
-  # };
+  drivers.amdgpu.enable = false;
+  drivers.nvidia.enable = false;
+  drivers.nvidia-prime = {
+    enable = false;
+    intelBusID = "";
+    nvidiaBusID = "";
+  };
   drivers.intel.enable = true;
   vm.guest-services.enable = false;
   local.hardware-clock.enable = false;
@@ -296,9 +297,12 @@ in
     zoxide
     imagemagick
     ffmpeg_7-full
+    ueberzugpp
     # for youtube
     yt-dlp
     ytfzf
+    # for themes
+    base16-schemes
     # for screenshot
     swappy grim slurp
     # sound controller
