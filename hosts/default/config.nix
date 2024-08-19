@@ -85,12 +85,12 @@ in
         name = "JetBrainsMono Nerd Font Mono";
       };
       sansSerif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.amiri;
+        name = "Amiri";
       };
       serif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.amiri;
+        name = "Amiri";
       };
       sizes = {
         applications = 12;
