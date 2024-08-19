@@ -354,7 +354,6 @@ in
       material-icons
       google-fonts
       nerdfonts
-       
     ];
   };
 
