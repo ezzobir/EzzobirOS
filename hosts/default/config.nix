@@ -286,7 +286,7 @@ in
     nixfmt-rfc-style
     libvirt
     swww
-    file-roller
+    gnome.file-roller
     swaynotificationcenter
     tree
     jq
