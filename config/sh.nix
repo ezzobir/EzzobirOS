@@ -115,13 +115,13 @@ in
       enable = true;
       # enableCompletion = true;
       loginShellInit = ''
-        set -U fish_greeting ""
         # if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
         #     exec Hyprland
         # end
       '';
       interactiveShellInit = ''
         fastfetch
+        set -U fish_greeting ""
         # Begin Vi Mode
         # -----------------------------------------------------
         fish_vi_key_bindings
