@@ -353,7 +353,7 @@ in
       symbola
       material-icons
       google-fonts
-      nerdfonts
+      # nerdfonts
     ];
   };
 
