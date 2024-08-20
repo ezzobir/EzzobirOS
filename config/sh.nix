@@ -97,7 +97,7 @@ in
         #fi
       '';
       initExtra = ''
-        fastfetch
+        # fastfetch
         # Begin Vi Mode
         # -----------------------------------------------------
         set -o vi
@@ -120,7 +120,7 @@ in
         # end
       '';
       interactiveShellInit = ''
-        fastfetch
+        # fastfetch
         set -U fish_greeting ""
         # Begin Vi Mode
         # -----------------------------------------------------
