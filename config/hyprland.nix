@@ -60,7 +60,6 @@ with lib;
           input {
             kb_layout = ${keyboardLayout}
             kb_options = grp:win_space_toggle
-            kb_options = caps:super
             follow_mouse = 1
             touchpad {
               natural_scroll = true
