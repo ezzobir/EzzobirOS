@@ -5,8 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    stylix.url = "github:danth/stylix";
     # stylix.url = "github:danth/stylix/release-24.05";
+    stylix.url = "github:danth/stylix";
     fine-cmdline = {
       url = "github:VonHeikemen/fine-cmdline.nvim";
       flake = false;
@@ -14,7 +14,7 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }@inputs:
+    { nixpkgs, home-manager, stylix, ... }@inputs:
     let
       system = "x86_64-linux";
       host = "default";
@@ -31,7 +31,8 @@
           };
           modules = [
             ./hosts/${host}/config.nix
-            inputs.stylix.nixosModules.stylix
+            # inputs.stylix.nixosModules.stylix
+            stylix.nixosModules.stylix
             home-manager.nixosModules.home-manager
             {
               home-manager.extraSpecialArgs = {
