@@ -17,7 +17,6 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   --timeout-indicator=right \
   " = Windows/Super/CAPS LOCK" "Modifier Key, used for keybindings" "Doesn't really execute anything by itself." \
   " + ENTER" "Terminal" "${terminal}" \
-  " + SHIFT + ENTER" "App Launcher" "rofi" \
   " + ALT + W" "Change Wallpaper" "wallsetter" \
   " + Q" "Kill Focused Window" "killactive" \
   " + SHIFT + W" "Search Websites Like Nix Packages" "web-search" \
@@ -25,10 +24,10 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   " + W" "Launch Web Browser" "${browser}" \
   " + E" "Launch Emoji Selector" "emopicker9000" \
   " + S" "Take Screenshot" "screenshootin" \
-  " + D" "Launch Discord" "discord" \
+  " + D" "App Launcher" "rofi" \
   " + O" "Launch OBS" "obs" \
   " + G" "Launch GIMP" "gimp" \
-  " + N" "Launch New File Browser Window" "thunar" \
+  " + T" "Launch New File Browser Window" "thunar" \
   " + M" "Launch Spotify" "spotify" \
   " + P" "Pseudo Tiling" "pseudo" \
   " + SHIFT + I" "Toggle Split Direction" "togglesplit" \

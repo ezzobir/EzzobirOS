@@ -86,12 +86,12 @@ in
         name = "JetBrainsMono Nerd Font Mono";
       };
       sansSerif = {
-        package = pkgs.amiri;
-        name = "Amiri";
+        package = pkgs.noto-fonts;
+        name = "Noto Sans";
       };
       serif = {
-        package = pkgs.amiri;
-        name = "Amiri";
+        package = pkgs.noto-fonts;
+        name = "Noto Serif";
       };
       sizes = {
         applications = 12;
