@@ -65,7 +65,7 @@
               "dummy"
               "mode-switcher"
             ];
-            background-image = mkLiteral ''url("~/Pictures/wallpapers/gruvbox-rainbow-nix.png", width)'';
+            background-image = mkLiteral ''url("~/Pictures/wallpapers/flora.jpg", width)'';
           };
           "entry" = {
             enabled = true;
