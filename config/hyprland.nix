@@ -59,7 +59,7 @@ with lib;
           }
           input {
             kb_layout = ${keyboardLayout}
-            kb_options = grp:alt_shift_toggle
+            kb_options = grp:win_space_toggle
             kb_options = caps:super
             follow_mouse = 1
             touchpad {
@@ -172,8 +172,8 @@ with lib;
           bind = ${modifier},8,workspace,8
           bind = ${modifier},9,workspace,9
           bind = ${modifier},0,workspace,10
-          bind = ${modifier}SHIFT,SPACE,movetoworkspace,special
-          bind = ${modifier},SPACE,togglespecialworkspace
+          bind = ${modifier}SHIFT,V,movetoworkspace,special
+          bind = ${modifier},V,togglespecialworkspace
           bind = ${modifier}SHIFT,1,movetoworkspace,1
           bind = ${modifier}SHIFT,2,movetoworkspace,2
           bind = ${modifier}SHIFT,3,movetoworkspace,3
