@@ -54,7 +54,8 @@ in
   # Styling Options
   stylix = {
     enable = true;
-    image = ../../config/wallpapers/beautifulmountainscape.jpg;
+    # image = ../../config/wallpapers/beautifulmountainscape.jpg;
+    base16Scheme = "{pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     # base16Scheme = "{pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yml";
     # base16Scheme = {
     #   base00 = "232136";
