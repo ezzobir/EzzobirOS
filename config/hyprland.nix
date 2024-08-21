@@ -183,14 +183,22 @@ with lib;
           bind = ${modifier}, up, hy3:movefocus, u
           bind = ${modifier}, right, hy3:movefocus, r
           
-          # bind = ${modifier}CONTROL, h, resizewindow -10 0     # Decrease width by 10 pixels
-          # bind = ${modifier}CONTROL, j, resizewindow 0 10      # Increase height by 10 pixels
-          # bind = ${modifier}CONTROL, k, resizewindow 0 -10       # Decrease height by 10 pixels
-          # bind = ${modifier}CONTROL, l, resizewindow 10 0     # Increase width by 10 pixels
-          # bind = ${modifier}CONTROL, left, resizewindow -10 0     # Decrease width by 10 pixels
-          # bind = ${modifier}CONTROL, down, resizewindow 0 10      # Increase height by 10 pixels
-          # bind = ${modifier}CONTROL, up, resizewindow 0 -10       # Decrease height by 10 pixels
-          # bind = ${modifier}CONTROL, right, resizewindow 10 0     # Increase width by 10 pixels
+          # begin resize mode
+          # will switch to a submap called resize
+          bind = ALT, R, submap, resize
+          # will start a submap called "resize"
+          submap = resize
+          # sets repeatable binds for resizing the active window
+          binde = , right, resizeactive, 10 0
+          binde = , left, resizeactive, -10 0
+          binde = , up, resizeactive, 0 -10
+          binde = , down, resizeactive, 0 10
+          # use reset to go back to the global submap
+          bind = , escape, submap, reset 
+          # will reset the submap, which will return to the global submap
+          submap = reset
+          # keybinds further down will be global again...
+          # end resize mode
 
           # bind = ${modifier}CONTROL, h, hy3:movefocus, l, visible, nowarp
           # bind = ${modifier}CONTROL, j, hy3:movefocus, d, visible, nowarp
