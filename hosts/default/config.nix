@@ -478,10 +478,6 @@ in
     };
     rpcbind.enable = false;
     nfs.server.enable = false;
-    emacs = {
-      enable = true;
-      startWithGraphical = true;
-    };
   };
   systemd.services.flatpak-repo = {
     path = [ pkgs.flatpak ];
