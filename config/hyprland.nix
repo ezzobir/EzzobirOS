@@ -124,7 +124,7 @@ with lib;
             }
             hy3 {
               no_gaps_when_only = 1 
-              tab_first_window = false
+              tab_first_window = true
               tabs {
                   height = 4
                   padding = 6
