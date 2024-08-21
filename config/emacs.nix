@@ -6,7 +6,6 @@
   services= {
     emacs = {
       enable = true;
-      startWithGraphical = true;
       client.enable = true;
     };
   };
