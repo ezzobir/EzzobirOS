@@ -51,8 +51,8 @@ with lib;
           monitor=,preferred,auto,1
           ${extraMonitorSettings}
           general {
-            gaps_in = 3
-            gaps_out = 5
+            gaps_in = 2 #3
+            gaps_out = 0 #5
             border_size = 2
             layout = hy3
             resize_on_border = true
