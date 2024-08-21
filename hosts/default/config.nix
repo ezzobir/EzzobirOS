@@ -356,10 +356,10 @@ in
     # # design
     obs-studio
     audacity
-    # inkscape
-    # gimp
-    # kdePackages.kdenlive
-    # natron
+    inkscape
+    gimp
+    kdePackages.kdenlive
+    natron
     # # math software
     # sage
     # R
