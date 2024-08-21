@@ -138,10 +138,10 @@ with lib;
               }
             }
           }
-          dwindle {
-            pseudotile = true
-            preserve_split = true
-          }
+          # dwindle {
+          #   pseudotile = true
+          #   preserve_split = true
+          # }
           bind = ${modifier},Return,exec,${terminal}
           bind = ${modifier},D,exec,rofi-launcher
           bind = ${modifier}SHIFT,W,exec,web-search
