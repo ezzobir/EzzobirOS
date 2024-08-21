@@ -164,9 +164,9 @@ with lib;
           bind = ${modifier}SHIFT,F,fullscreen, 0
           bind = ${modifier}SHIFT,Tab,togglefloating
 
-          # bind = ${modifier},D,hy3:makegroup,h
-          # bind = ${modifier},S,hy3:makegroup,v
-          bind = ${modifier},Z,hy3:makegroup,tab
+          bind = ${modifier},semicolon,hy3:makegroup,h
+          bind = ${modifier},comma,hy3:makegroup,v
+          bind = ${modifier},period,hy3:makegroup,tab
           bind = ${modifier},Tab,hy3:changegroup,toggletab
           bind = ${modifier},A,hy3:changefocus,raise
           bind = ${modifier}SHIFT,A,hy3:changefocus,lower
