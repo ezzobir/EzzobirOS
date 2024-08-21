@@ -126,7 +126,7 @@ with lib;
               no_gaps_when_only = 1 
               tab_first_window = true
               tabs {
-                  height = 2
+                  height = 4
                   padding = 6
                   render_text = false
               }
