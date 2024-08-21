@@ -51,10 +51,10 @@ with lib;
           monitor=,preferred,auto,1
           ${extraMonitorSettings}
           general {
-            gaps_in = 6
-            gaps_out = 8
+            gaps_in = 3
+            gaps_out = 5
             border_size = 2
-            layout = dwindle
+            layout = hy 
             resize_on_border = true
             col.active_border = rgb(${config.stylix.base16Scheme.base08}) rgb(${config.stylix.base16Scheme.base0C}) 45deg
             col.inactive_border = rgb(${config.stylix.base16Scheme.base01})
@@ -122,47 +122,93 @@ with lib;
           plugin {
             hyprtrails {
             }
+            hy3 {
+              tabs {
+                  height = 2
+                  padding = 6
+                  render_text = false
+              }
+
+              autotile {
+                  enable = true
+                  trigger_width = 800
+                  trigger_height = 500
+              }
+            }
           }
           dwindle {
             pseudotile = true
             preserve_split = true
           }
           bind = ${modifier},Return,exec,${terminal}
-          bind = ${modifier},D,exec,rofi-launcher
+          bind = ${modifier},grave,exec,rofi-launcher
           bind = ${modifier}SHIFT,W,exec,web-search
           bind = ${modifier}ALT,W,exec,wallsetter
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
           bind = ${modifier},W,exec,${browser}
-          bind = ${modifier},E,exec,emopicker9000
-          bind = ${modifier},S,exec,screenshootin
+          bind = ${modifier}CONTROL,E,exec,emopicker9000
+          bind = ${modifier}SHIFT,S,exec,screenshootin
           bind = ${modifier},O,exec,obs
           bind = ${modifier},C,exec,hyprpicker -a
           bind = ${modifier},G,exec,gimp
           bind = ${modifier}SHIFT,G,exec,godot4
           bind = ${modifier},T,exec,thunar
           bind = ${modifier},M,exec,spotify
-          bind = ${modifier},Q,killactive,
+          bind = ${modifier},Q,hy3:killactive,
           bind = ${modifier},P,pseudo,
           bind = ${modifier}SHIFT,I,togglesplit,
-          bind = ${modifier},F,fullscreen,
-          bind = ${modifier}SHIFT,F,togglefloating,
+
+          bind = ${modifier},F,fullscreen, 1
+          bind = ${modifier}SHIFT,F,fullscreen, 0
+          bind = ${modifier}SHIFT,tab,togglefloating
+
+          bind = ${modifier},D,hy3:makegroup,h
+          bind = ${modifier},S,hy3:makegroup,v
+          bind = ${modifier},Z,hy3:makegroup,tab
+          bind = ${modifier},A,hy3:changefocus,raise
+          bind = ${modifier}SHIFT,A,hy3:changefocus,lower
+          bind = ${modifier},E,hy3:expand,expand
+          bind = ${modifier}SHIFT,E,hy3:expand,base
+          bind = ${modifier},R,hy3:changegroup,opposite
+
+          bind = ${modifier}, h, hy3:movefocus, l
+          bind = ${modifier}, j, hy3:movefocus, d
+          bind = ${modifier}, k, hy3:movefocus, u
+          bind = ${modifier}, l, hy3:movefocus, r
+          bind = ${modifier}, left, hy3:movefocus, l
+          bind = ${modifier}, down, hy3:movefocus, d
+          bind = ${modifier}, up, hy3:movefocus, u
+          bind = ${modifier}, right, hy3:movefocus, r
+          
+          bind = ${modifier}CONTROL, h, hy3:movefocus, l, visible, nowarp
+          bind = ${modifier}CONTROL, j, hy3:movefocus, d, visible, nowarp
+          bind = ${modifier}CONTROL, k, hy3:movefocus, u, visible, nowarp
+          bind = ${modifier}CONTROL, l, hy3:movefocus, r, visible, nowarp
+          bind = ${modifier}CONTROL, left, hy3:movefocus, l, visible, nowarp
+          bind = ${modifier}CONTROL, down, hy3:movefocus, d, visible, nowarp
+          bind = ${modifier}CONTROL, up, hy3:movefocus, u, visible, nowarp
+          bind = ${modifier}CONTROL, right, hy3:movefocus, r, visible, nowarp
+          
+          bind = ${modifier}SHIFT, h, hy3:movewindow, l, once
+          bind = ${modifier}SHIFT, j, hy3:movewindow, d, once
+          bind = ${modifier}SHIFT, k, hy3:movewindow, u, once
+          bind = ${modifier}SHIFT, l, hy3:movewindow, r, once
+          bind = ${modifier}SHIFT, left, hy3:movewindow, l, once
+          bind = ${modifier}SHIFT, down, hy3:movewindow, d, once
+          bind = ${modifier}SHIFT, up, hy3:movewindow, u, once
+          bind = ${modifier}SHIFT, right, hy3:movewindow, r, once
+          
+          bind = ${modifier}CONTROL SHIFT, h, hy3:movewindow, l, once, visible
+          bind = ${modifier}CONTROL SHIFT, j, hy3:movewindow, d, once, visible
+          bind = ${modifier}CONTROL SHIFT, k, hy3:movewindow, u, once, visible
+          bind = ${modifier}CONTROL SHIFT, l, hy3:movewindow, r, once, visible
+          bind = ${modifier}CONTROL SHIFT, left, hy3:movewindow, l, once, visible
+          bind = ${modifier}CONTROL SHIFT, down, hy3:movewindow, d, once, visible
+          bind = ${modifier}CONTROL SHIFT, up, hy3:movewindow, u, once, visible
+          bind = ${modifier}CONTROL SHIFT, right, hy3:movewindow, r, once, visible
+
           bind = ${modifier}SHIFT,C,exit,
-          bind = ${modifier}SHIFT,left,movewindow,l
-          bind = ${modifier}SHIFT,right,movewindow,r
-          bind = ${modifier}SHIFT,up,movewindow,u
-          bind = ${modifier}SHIFT,down,movewindow,d
-          bind = ${modifier}SHIFT,h,movewindow,l
-          bind = ${modifier}SHIFT,l,movewindow,r
-          bind = ${modifier}SHIFT,k,movewindow,u
-          bind = ${modifier}SHIFT,j,movewindow,d
-          bind = ${modifier},left,movefocus,l
-          bind = ${modifier},right,movefocus,r
-          bind = ${modifier},up,movefocus,u
-          bind = ${modifier},down,movefocus,d
-          bind = ${modifier},h,movefocus,l
-          bind = ${modifier},l,movefocus,r
-          bind = ${modifier},k,movefocus,u
-          bind = ${modifier},j,movefocus,d
+
           bind = ${modifier},1,workspace,1
           bind = ${modifier},2,workspace,2
           bind = ${modifier},3,workspace,3
@@ -173,6 +219,7 @@ with lib;
           bind = ${modifier},8,workspace,8
           bind = ${modifier},9,workspace,9
           bind = ${modifier},0,workspace,10
+
           bind = ${modifier}SHIFT,V,movetoworkspace,special
           bind = ${modifier},V,togglespecialworkspace
           bind = ${modifier}SHIFT,1,movetoworkspace,1
