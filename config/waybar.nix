@@ -19,7 +19,7 @@ with lib;
     settings = [
       {
         layer = "top";
-        position = "top";
+        position = "bottom";
         modules-center = [ "hyprland/workspaces" ];
         modules-left = [
           "custom/startmenu"
