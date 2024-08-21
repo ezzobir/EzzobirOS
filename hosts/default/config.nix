@@ -366,7 +366,7 @@ in
     # octaveFull
     # # ai
     # jupyter-all
-    # python3Full
+    python3Full
 
   ];
 
