@@ -164,10 +164,10 @@ with lib;
           bind = ${modifier}SHIFT,F,fullscreen, 0
           bind = ${modifier}SHIFT,Tab,togglefloating
 
+          bind = ${modifier},Tab,hy3:changegroup,toggletab
           bind = ${modifier},semicolon,hy3:makegroup,h
           bind = ${modifier},comma,hy3:makegroup,v
           bind = ${modifier},period,hy3:makegroup,tab
-          bind = ${modifier},Tab,hy3:changegroup,toggletab
           bind = ${modifier},A,hy3:changefocus,raise
           bind = ${modifier}SHIFT,A,hy3:changefocus,lower
           bind = ${modifier},E,hy3:expand,expand
@@ -258,8 +258,8 @@ with lib;
           bind = ${modifier},mouse_up,workspace, e-1
           bindm = ${modifier},mouse:272,movewindow
           bindm = ${modifier},mouse:273,resizewindow
-          bind = ALT,Tab,cyclenext
-          bind = ALT,Tab,bringactivetotop
+          # bind = ALT,Tab,cyclenext
+          # bind = ALT,Tab,bringactivetotop
           bind = ,XF86AudioRaiseVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
           bind = ,XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
           binde = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
