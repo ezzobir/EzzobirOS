@@ -143,7 +143,7 @@ with lib;
             preserve_split = true
           }
           bind = ${modifier},Return,exec,${terminal}
-          bind = ${modifier},semicolon,exec,rofi-launcher
+          bind = ${modifier},D,exec,rofi-launcher
           bind = ${modifier}SHIFT,W,exec,web-search
           bind = ${modifier}ALT,W,exec,wallsetter
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
@@ -164,8 +164,8 @@ with lib;
           bind = ${modifier}SHIFT,F,fullscreen, 0
           bind = ${modifier}SHIFT,Tab,togglefloating
 
-          bind = ${modifier},D,hy3:makegroup,h
-          bind = ${modifier},S,hy3:makegroup,v
+          # bind = ${modifier},D,hy3:makegroup,h
+          # bind = ${modifier},S,hy3:makegroup,v
           bind = ${modifier},Z,hy3:makegroup,tab
           bind = ${modifier},Tab,hy3:changegroup,toggletab
           bind = ${modifier},A,hy3:changefocus,raise
