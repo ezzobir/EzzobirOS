@@ -269,6 +269,7 @@ in
     git
     # editors
     neovide
+    vscodium
     # terminal utils
     wget
     curl
