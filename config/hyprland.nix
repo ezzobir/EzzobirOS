@@ -123,6 +123,8 @@ with lib;
             hyprtrails {
             }
             hy3 {
+              no_gaps_when_only = 1 
+              tab_first_window = true
               tabs {
                   height = 2
                   padding = 6
@@ -141,7 +143,7 @@ with lib;
             preserve_split = true
           }
           bind = ${modifier},Return,exec,${terminal}
-          bind = ${modifier},grave,exec,rofi-launcher
+          bind = ${modifier},semicolon,exec,rofi-launcher
           bind = ${modifier}SHIFT,W,exec,web-search
           bind = ${modifier}ALT,W,exec,wallsetter
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
