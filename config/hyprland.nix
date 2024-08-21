@@ -51,9 +51,9 @@ with lib;
           monitor=,preferred,auto,1
           ${extraMonitorSettings}
           general {
-            gaps_in = 2 #3
+            gaps_in = 3 #3
             gaps_out = 0 #5
-            border_size = 2
+            border_size = 3
             layout = hy3
             resize_on_border = true
             col.active_border = rgb(${config.stylix.base16Scheme.base08}) rgb(${config.stylix.base16Scheme.base0C}) 45deg
@@ -106,7 +106,7 @@ with lib;
             animation = workspaces, 1, 5, wind
           }
           decoration {
-            rounding = 10
+            rounding = 0 # 10
             drop_shadow = true
             shadow_range = 4
             shadow_render_power = 3
