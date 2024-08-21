@@ -344,10 +344,10 @@ in
     # video player
     mpv
     vlc
-    # # desktop publicshing
-    # onlyoffice-bin_latest
-    # libreoffice-fresh
-    # typst
+    # desktop publicshing
+    onlyoffice-bin_latest
+    libreoffice-fresh
+    typst
     # texliveFull
     # lyx
     # # design
