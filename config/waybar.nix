@@ -18,8 +18,8 @@ with lib;
     package = pkgs.waybar;
     settings = [
       {
-        layer = "top";
-        position = "bottom";
+        layer = "bottom";
+        position = "top";
         modules-center = [ "hyprland/workspaces" ];
         modules-left = [
           "custom/startmenu"
