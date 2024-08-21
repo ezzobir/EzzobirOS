@@ -354,8 +354,8 @@ in
     # texliveFull
     # lyx
     # # design
-    # obs-studio
-    # audacity
+    obs-studio
+    audacity
     # inkscape
     # gimp
     # kdePackages.kdenlive
