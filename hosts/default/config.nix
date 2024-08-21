@@ -344,6 +344,8 @@ in
     # video player
     mpv
     vlc
+    # note taking app
+    appflowy
     # desktop publicshing
     onlyoffice-bin_latest
     libreoffice-fresh
