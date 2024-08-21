@@ -14,9 +14,9 @@ let
     # -----------------------------------------------------
 
     # fu = "nh os switch --hostname ${host} --update /home/${username}/ezzobiros";
-    fu = "sudo nixos-rebuild switch --flake /home/ezzobiros/#default";
+    fu = "cd /home/ezzobir/ezzobiros; nix flake update";
     # fr = "nh os switch --hostname ${host} /home/${username}/ezzobiros";
-    fr = "nh os switch --hostname ${host} /home/${username}/ezzobiros";
+    fr = "sudo nixos-rebuild switch --flake /home/ezzobir/ezzobiros/#default";
     ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
     eu = "sh <(curl -L https://gitlab.com/ezzobir/ezzobiros/-/raw/main/install-ezzobiros.sh)";
 
