@@ -14,7 +14,7 @@ let
     # -----------------------------------------------------
 
     # fu = "nh os switch --hostname ${host} --update /home/${username}/ezzobiros";
-    fu = "cd /home/ezzobir/ezzobiros; nix flake update";
+    fu = "cd /home/ezzobir/ezzobiros;sudo nix flake update";
     # fr = "nh os switch --hostname ${host} /home/${username}/ezzobiros";
     fr = "sudo nixos-rebuild switch --flake /home/ezzobir/ezzobiros/#default";
     ncg = "nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
