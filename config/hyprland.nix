@@ -3,6 +3,7 @@
   username,
   host,
   config,
+  pkgs,
   ...
 }:
 
