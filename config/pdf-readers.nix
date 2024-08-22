@@ -55,4 +55,120 @@
       "visual_mark_under_cursor" = "<C-v>";
     };
   };
+
+  programs.zathura = {
+    enable = true;
+    options = {
+      # begin information
+      ##########################################################
+      # Title: My Zathura PDF Viwer Configuration
+      # Author: Ezzobir Bezziou
+      # Link to this file: https://github.com/ezzobir/.dotfiles/tree/main/.config/zathura
+      # Link to my dotfiles: www.github.com/ezzobir/.dotfiles
+      ##########################################################
+      # end information
+      
+      # begin some settings
+      ##########################################################
+      
+      # open in dark mode
+      recolor = true;
+      
+      # auto adjustment
+      adjust-open = "width";
+      
+      # space between pages
+      page-padding = 10;
+      
+      # scroll-step
+      ##########################################################
+      # end some settings
+      
+      # begin base16-gruvbox-dark-hard theme
+      ##########################################################
+      default-bg = "#1d2021";
+      default-fg = "#3c3836";
+      
+      statusbar-fg = "#bdae93";
+      statusbar-bg = "#504945";
+      
+      inputbar-bg = "#1d2021";
+      inputbar-fg = "#fbf1c7";
+      
+      notification-bg = "#1d2021";
+      notification-fg = "#fbf1c7";
+      
+      notification-error-bg = "#1d2021";
+      notification-error-fg = "#fb4934";
+      
+      notification-warning-bg = "#1d2021";
+      notification-warning-fg = "#fb4934";
+      
+      highlight-color = "#fabd2f";
+      highlight-active-color = "#83a598";
+      
+      completion-bg = "#3c3836";
+      completion-fg = "#83a598";
+      
+      completion-highlight-fg = "#fbf1c7";
+      completion-highlight-bg = "#83a598";
+      
+      recolor-lightcolor = "#1d2021";
+      recolor-darkcolor = "#ebdbb2";
+      
+      recolor-keephue = "true";
+      ##########################################################
+      # end base16-gruvbox-dark-hard theme
+    };
+    mappings = {
+      # begin my keybinding
+      ##########################################################
+      # Switch back to normal mode 
+      "<Esc>" = "abort";
+      
+      # previous page
+      "<C-h>" = "navigate previous";
+      
+      # next page
+      "<C-l>" = "navigate next";
+      
+      # switch between dark and light mode
+      "i" = "recolor";
+      
+      # zoom in
+      "<C-i>" = "zoom in";
+      
+      # zoom out
+      "<C-o>" = "zoom out";
+      
+      # hide or show status bar 
+      "y" = "toggle_statusbar";
+      
+      # hide or show input bar 
+      "m" = "toggle_inputbar";
+       
+      # fit page width
+      "w" = "adjust_window width";
+      
+      # best fit page
+      "b" = "adjust_window best-fit";
+      
+      # full screen
+      # map f toggle_fullscreen
+      
+      # reload
+      "R" = "reload";
+      
+      # rotate
+      "r" = "rotate";
+      
+      # print
+      "<C-p>" = "print";
+      
+      # index
+      "<Tab>" = "index_navigate";
+      ##########################################################
+      # end my keybinding
+    };
+  };
 }
