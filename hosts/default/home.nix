@@ -20,7 +20,6 @@ in
     ../../config/sh.nix
     ../../config/hyprland.nix
     ../../config/neovim.nix
-    ../../config/emacs.nix
     ../../config/rofi/rofi.nix
     ../../config/rofi/config-emoji.nix
     ../../config/rofi/config-long.nix
@@ -28,6 +27,8 @@ in
     ../../config/waybar.nix
     ../../config/wlogout.nix
     ../../config/fastfetch
+    ../../config/emacs.nix
+    ../../config/pdf-readers.nix
   ];
 
   # Place Files Inside Home Directory
