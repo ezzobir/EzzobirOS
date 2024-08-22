@@ -9,27 +9,27 @@
       "page_separator_width" = "10";
       "show_doc_path" = "1";
       "show_document_name_in_statusbar" = "1";
-      # #Theme
-      # #-------------------------------------------------------------------------------------------------------------
-      # # base16-sioyek (https://github.com/loiccoyle/base16-sioyek)
-      # # by Loic Coyle
-      # # Gruvbox dark, hard scheme byDawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
-      # "custom_background_color" = "#1d2021";
-      # "custom_text_color" = "#ebdbb2";
-      # "page_separator_color" = "#1d2021";
-      # "search_highlight_color" = "#fabd2f";
-      # "status_bar_color" = "#1d2021";
-      # "status_bar_text_color" = "#ebdbb2";
-      # "ui_text_color" = "#ebdbb2";
-      # "ui_selected_text_color" = "#ebdbb2";
-      # "ui_background_color" = "#3c3836";
-      # "ui_selected_background_color" = "#665c54";
-      # "background_color" = "#1d2021";
-      # "visual_mark_color" = "0.4 0.36078432 0.32941177 0.2";
-      # "text_highlight_color" = "#665c54";
-      # "link_highlight_color" = "#83a598";
-      # "synctex_highlight_color" = "#fb4934";
-      # #-------------------------------------------------------------------------------------------------------------
+      #Theme
+      #-------------------------------------------------------------------------------------------------------------
+      # base16-sioyek (https://github.com/loiccoyle/base16-sioyek)
+      # by Loic Coyle
+      # Gruvbox dark, hard scheme byDawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+      "custom_background_color" = "#1d2021";
+      "custom_text_color" = "#ebdbb2";
+      "page_separator_color" = "#1d2021";
+      "search_highlight_color" = "#fabd2f";
+      "status_bar_color" = "#1d2021";
+      "status_bar_text_color" = "#ebdbb2";
+      "ui_text_color" = "#ebdbb2";
+      "ui_selected_text_color" = "#ebdbb2";
+      "ui_background_color" = "#3c3836";
+      "ui_selected_background_color" = "#665c54";
+      "background_color" = "#1d2021";
+      "visual_mark_color" = "0.4 0.36078432 0.32941177 0.2";
+      "text_highlight_color" = "#665c54";
+      "link_highlight_color" = "#83a598";
+      "synctex_highlight_color" = "#fb4934";
+      #-------------------------------------------------------------------------------------------------------------
     };
     bindings = {
       "move_left" = "l";
@@ -86,35 +86,35 @@
       
       # begin base16-gruvbox-dark-hard theme
       ##########################################################
-      default-bg = "#1d2021";
-      default-fg = "#3c3836";
-      
-      statusbar-fg = "#bdae93";
-      statusbar-bg = "#504945";
-      
-      inputbar-bg = "#1d2021";
-      inputbar-fg = "#fbf1c7";
-      
-      notification-bg = "#1d2021";
-      notification-fg = "#fbf1c7";
-      
-      notification-error-bg = "#1d2021";
-      notification-error-fg = "#fb4934";
-      
-      notification-warning-bg = "#1d2021";
-      notification-warning-fg = "#fb4934";
-      
-      highlight-color = "#fabd2f";
-      highlight-active-color = "#83a598";
-      
-      completion-bg = "#3c3836";
-      completion-fg = "#83a598";
-      
-      completion-highlight-fg = "#fbf1c7";
-      completion-highlight-bg = "#83a598";
-      
-      recolor-lightcolor = "#1d2021";
-      recolor-darkcolor = "#ebdbb2";
+      # default-bg = "#1d2021";
+      # default-fg = "#3c3836";
+      # 
+      # statusbar-fg = "#bdae93";
+      # statusbar-bg = "#504945";
+      # 
+      # inputbar-bg = "#1d2021";
+      # inputbar-fg = "#fbf1c7";
+      # 
+      # notification-bg = "#1d2021";
+      # notification-fg = "#fbf1c7";
+      # 
+      # notification-error-bg = "#1d2021";
+      # notification-error-fg = "#fb4934";
+      # 
+      # notification-warning-bg = "#1d2021";
+      # notification-warning-fg = "#fb4934";
+      # 
+      # highlight-color = "#fabd2f";
+      # highlight-active-color = "#83a598";
+      # 
+      # completion-bg = "#3c3836";
+      # completion-fg = "#83a598";
+      # 
+      # completion-highlight-fg = "#fbf1c7";
+      # completion-highlight-bg = "#83a598";
+      # 
+      # recolor-lightcolor = "#1d2021";
+      # recolor-darkcolor = "#ebdbb2";
       
       recolor-keephue = "true";
       ##########################################################
