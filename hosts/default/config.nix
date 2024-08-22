@@ -267,8 +267,12 @@ in
 
   environment.systemPackages = with pkgs; [
     git
+    kitty
+    zellij
     # editors
+    neovim
     neovide
+    emacs
     vscodium
     # terminal utils
     wget
