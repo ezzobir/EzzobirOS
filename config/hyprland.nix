@@ -160,8 +160,8 @@ with lib;
           bind = ${modifier},P,pseudo,
           bind = ${modifier}SHIFT,I,togglesplit,
 
-          bind = ${modifier},F,fullscreen, 1
-          bind = ${modifier}SHIFT,F,fullscreen, 0
+          bind = ${modifier},F,fullscreen, 0
+          bind = ${modifier}SHIFT,F,fullscreen, 1
           bind = ${modifier}SHIFT,Tab,togglefloating
 
           bind = ${modifier},Tab,hy3:changegroup,toggletab
