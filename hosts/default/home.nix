@@ -29,6 +29,7 @@ in
     ../../config/fastfetch
     ../../config/emacs.nix
     ../../config/pdf-readers.nix
+    ../../config/zellij.nix
   ];
 
   # Place Files Inside Home Directory
@@ -65,9 +66,6 @@ in
         init.defaultBranch = "main";
         # safe.directory = "put here directory path you wish";
       };
-    };
-    zellij = {
-      enable = true;
     };
     yazi = {
       enable = true;
