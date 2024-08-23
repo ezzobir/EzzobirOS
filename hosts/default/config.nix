@@ -371,7 +371,7 @@ in
     # # ai
     # jupyter-all
     python3Full
-
+    rustup
   ];
 
   fonts = {
