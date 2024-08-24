@@ -332,6 +332,7 @@ in
     base16-schemes
     # for screenshot
     swappy grim slurp
+    flameshot
     # sound controller
     pavucontrol
     spotify
