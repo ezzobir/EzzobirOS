@@ -325,7 +325,7 @@ in
     zoxide
     imagemagick
     ffmpeg_7-full
-    # ueberzugpp
+    ueberzugpp
     # for youtube
     yt-dlp
     ytfzf
