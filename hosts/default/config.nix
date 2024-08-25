@@ -352,6 +352,13 @@ in
     mpv
     vlc
     # note taking app
+    stdenvNoCC
+    autoPatchelfHook
+    copyDesktopItems
+    gtk3
+    xdg-user-dirs
+    keybinder3
+    libnotify
     appflowy
     # desktop publicshing
     onlyoffice-bin_latest
