@@ -160,7 +160,7 @@ in
   };
 
   programs = {
-    firefox.enable = true;
+    firefox.enable = false;
     starship = {
       enable = true;
       settings = {
@@ -352,13 +352,13 @@ in
     mpv
     vlc
     # note taking app
-    stdenvNoCC
-    autoPatchelfHook
-    copyDesktopItems
-    gtk3
-    xdg-user-dirs
-    keybinder3
-    libnotify
+    # stdenvNoCC
+    # autoPatchelfHook
+    # copyDesktopItems
+    # gtk3
+    # xdg-user-dirs
+    # keybinder3
+    # libnotify
     appflowy
     # desktop publicshing
     onlyoffice-bin_latest
