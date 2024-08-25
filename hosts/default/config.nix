@@ -54,7 +54,7 @@ in
   # Styling Options
   stylix = {
     enable = true;
-    image = ../../config/wallpapers/gruvbox-rainbow-nix.png;
+    image = ../../config/wallpapers/ezzobir-wallpaper.jpg;
     # base16Scheme = "{pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yml";
     #gruvbox-dark-hard 
     base16Scheme = {
