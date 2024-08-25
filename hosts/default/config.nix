@@ -160,7 +160,7 @@ in
   };
 
   programs = {
-    firefox.enable = false;
+    firefox.enable = true;
     starship = {
       enable = true;
       settings = {
