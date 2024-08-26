@@ -13,13 +13,10 @@
 
 { pkgs, ... }:
 pkgs.writeShellScriptBin "toggle-waybar" ''
-
-  WAYBAR_PID=$(pgrep -x waybar)
-
-  if [ -z "$WAYBAR_PID" ]; then
-      waybar &
+  if pgrep -x "waybar" > /dev/null; then
+    pkill -x waybar
   else
-      pkill $WAYBAR_PID
+      waybar &
   fi
 ''
 
