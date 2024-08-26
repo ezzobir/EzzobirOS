@@ -144,8 +144,8 @@ with lib;
           # }
           bind = ${modifier},Return,exec,${terminal}
           bind = ${modifier},D,exec,rofi-launcher
-          bind = ${modifier},M,exec, waybar &
-          bind = ${modifier}CONTROL,M,exec, pkill waybar
+          bind = ${modifier},Y,exec, waybar &
+          bind = ${modifier}CONTROL,Y,exec, pkill waybar
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
           bind = ${modifier},W,exec,${browser}
           bind = ${modifier}SHIFT,W,exec,web-search
@@ -154,10 +154,9 @@ with lib;
           bind = ${modifier},P,exec,screenshootin
           bind = ${modifier},C,exec,hyprpicker -a
           bind = ${modifier},T,exec,thunar
-          bind = ${modifier},S,exec,spotify
+          bind = ${modifier},M,exec,spotify
           bind = ${modifier},Q,hy3:killactive,
           # bind = ${modifier},P,pseudo,
-          # bind = ${modifier},I,togglesplit,
 
           bind = ${modifier},F,fullscreen, 0
           bind = ${modifier}SHIFT,F,fullscreen, 1
