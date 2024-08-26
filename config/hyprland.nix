@@ -144,14 +144,14 @@ with lib;
           # }
           bind = ${modifier},Return,exec,${terminal}
           bind = ${modifier},D,exec,rofi-launcher
-          # bind = ${modifier},S,exec,toggle-waybar
-          bind = ${modifier},S,exec, pkill waybar || waybar &
+          bind = ${modifier},G,exec, waybar &
+          bind = ${modifier}SHIFT,G,exec, pkill waybar
           bind = ${modifier}SHIFT,W,exec,web-search
           bind = ${modifier}ALT,W,exec,wallsetter
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
           bind = ${modifier},W,exec,${browser}
           bind = ${modifier}CONTROL,E,exec,emopicker9000
-          bind = ${modifier}SHIFT,S,exec,screenshootin
+          bind = ${modifier},S,exec,screenshootin
           bind = ${modifier},C,exec,hyprpicker -a
           bind = ${modifier},T,exec,thunar
           # bind = ${modifier},O,exec,obs
