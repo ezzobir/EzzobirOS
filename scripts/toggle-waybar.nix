@@ -14,7 +14,7 @@
 { pkgs, ... }:
 pkgs.writeShellScriptBin "toggle-waybar" ''
   if pgrep -x "waybar" > /dev/null; then
-    pkill -x waybar
+    pkill waybar
   else
       waybar &
   fi
