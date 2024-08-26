@@ -1,4 +1,5 @@
 {
+  # config,
   pkgs,
   username,
   host,
@@ -82,6 +83,26 @@ in
     userDirs = {
       enable = true;
       createDirectories = true;
+    };
+
+    # for appflowy
+    mimeApps = {
+      enable = true;
+      associations.added = {
+        "x-scheme-handler/appflowy-flutter" = [ "appflowy-flutter.desktop" ];
+      };
+      defaultApplications = {
+        "x-scheme-handler/appflowy-flutter" = [ "appflowy-flutter.desktop" ];
+      };
+    };
+    desktopEntries = {
+      appflowy-flutter = {
+        name = "Appflowy Flutter";
+        exec = "${pkgs.appflowy}/bin/appflowy %U";
+        terminal = false;
+        categories = [ "Application" ];
+        mimeType = [ "x-scheme-handler/appflowy-flutter" ];
+      };
     };
   };
 
