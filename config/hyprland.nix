@@ -144,23 +144,20 @@ with lib;
           # }
           bind = ${modifier},Return,exec,${terminal}
           bind = ${modifier},D,exec,rofi-launcher
-          bind = ${modifier},G,exec, waybar &
-          bind = ${modifier}SHIFT,G,exec, pkill waybar
-          bind = ${modifier}SHIFT,W,exec,web-search
-          bind = ${modifier}ALT,W,exec,wallsetter
+          bind = ${modifier},S,exec, waybar &
+          bind = ${modifier}SHIFT,S,exec, pkill waybar
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
           bind = ${modifier},W,exec,${browser}
+          bind = ${modifier}SHIFT,W,exec,web-search
+          bind = ${modifier}ALT,W,exec,wallsetter
           bind = ${modifier}CONTROL,E,exec,emopicker9000
-          bind = ${modifier},S,exec,screenshootin
+          bind = ${modifier},P,exec,screenshootin
           bind = ${modifier},C,exec,hyprpicker -a
           bind = ${modifier},T,exec,thunar
-          # bind = ${modifier},O,exec,obs
-          # bind = ${modifier},G,exec,gimp
-          # bind = ${modifier}SHIFT,G,exec,godot4
           bind = ${modifier},M,exec,spotify
           bind = ${modifier},Q,hy3:killactive,
-          bind = ${modifier},P,pseudo,
-          bind = ${modifier}SHIFT,I,togglesplit,
+          # bind = ${modifier},P,pseudo,
+          # bind = ${modifier},I,togglesplit,
 
           bind = ${modifier},F,fullscreen, 0
           bind = ${modifier}SHIFT,F,fullscreen, 1
@@ -174,7 +171,7 @@ with lib;
           bind = ${modifier}SHIFT,A,hy3:changefocus,lower
           bind = ${modifier},E,hy3:expand,expand
           bind = ${modifier}SHIFT,E,hy3:expand,base
-          bind = ${modifier},R,hy3:changegroup,opposite
+          bind = ${modifier},I,hy3:changegroup,opposite
 
           bind = ${modifier}, h, hy3:movefocus, l
           bind = ${modifier}, j, hy3:movefocus, d
@@ -187,7 +184,7 @@ with lib;
           
           # begin resize mode
           # will switch to a submap called resize
-          bind = ALT, R, submap, resize
+          bind = ${modifier}, R, submap, resize
           # will start a submap called "resize"
           submap = resize
           # sets repeatable binds for resizing the active window
