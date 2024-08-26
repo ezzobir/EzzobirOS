@@ -338,6 +338,11 @@ in
     pavucontrol
     spotify
     greetd.tuigreet
+    # to mount android devices
+    dosfstools
+    ntfs3g
+    udiskie
+    simple-mtpfs
     # browsers
     brave
     # messenger apps
