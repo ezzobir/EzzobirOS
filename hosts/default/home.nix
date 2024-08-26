@@ -127,7 +127,6 @@ in
     })
     (import ../../scripts/web-search.nix { inherit pkgs; })
     (import ../../scripts/rofi-launcher.nix { inherit pkgs; })
-    (import ../../scripts/toggle-waybar.nix { inherit pkgs; })
     (import ../../scripts/screenshootin.nix { inherit pkgs; })
     (import ../../scripts/list-hypr-bindings.nix {
       inherit pkgs;
