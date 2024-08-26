@@ -43,7 +43,7 @@ with lib;
           exec-once = dbus-update-activation-environment --systemd --all
           exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
           exec-once = killall -q swww;sleep .5 && swww-daemon --format xrgb
-          exec-once = killall -q waybar;sleep .5 && waybar
+          # exec-once = killall -q waybar;sleep .5 && waybar
           exec-once = killall -q swaync;sleep .5 && swaync
           exec-once = nm-applet --indicator
           exec-once = lxqt-policykit-agent
@@ -151,11 +151,11 @@ with lib;
           bind = ${modifier},W,exec,${browser}
           bind = ${modifier}CONTROL,E,exec,emopicker9000
           bind = ${modifier}SHIFT,S,exec,screenshootin
-          bind = ${modifier},O,exec,obs
           bind = ${modifier},C,exec,hyprpicker -a
-          bind = ${modifier},G,exec,gimp
-          bind = ${modifier}SHIFT,G,exec,godot4
           bind = ${modifier},T,exec,thunar
+          # bind = ${modifier},O,exec,obs
+          # bind = ${modifier},G,exec,gimp
+          # bind = ${modifier}SHIFT,G,exec,godot4
           bind = ${modifier},M,exec,spotify
           bind = ${modifier},Q,hy3:killactive,
           bind = ${modifier},P,pseudo,
