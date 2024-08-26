@@ -1,4 +1,3 @@
-# 
 # { pkgs }:
 # 
 # pkgs.writeShellScriptBin "rofi-launcher" ''
@@ -13,11 +12,17 @@
 
 { pkgs, ... }:
 pkgs.writeShellScriptBin "toggle-waybar" ''
-    if pgrep -x "waybar" > /dev/null; then
-        pkill -x "waybar"
-        sleep 1
-    else
-        waybar &
-    fi
+  if ps aux | grep "[w]aybar" > /dev/null; then
+      pkill -x "waybar"
+  else
+      waybar &
+  fi
 ''
+
+    # if pgrep -x "waybar" > /dev/null; then
+    #     pkill -x "waybar"
+    #     sleep 1
+    # else
+    #     waybar &
+    # fi
 
