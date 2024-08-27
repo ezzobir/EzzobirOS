@@ -375,8 +375,9 @@ in
     # octaveFull
     # # ai
     # jupyter-all
-    # python3Full
-    # python312Packages.pip
+    python3Full
+    python312Packages.pip
+    hyprlandPlugins.hy3
     # rustup
   ];
 
