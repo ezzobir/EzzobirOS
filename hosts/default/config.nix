@@ -274,7 +274,7 @@ in
     neovide
     emacs
     vscodium
-    zed-editor
+    # zed-editor
     # terminal utils
     wget
     curl
