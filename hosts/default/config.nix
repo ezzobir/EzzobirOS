@@ -270,7 +270,7 @@ in
     neovide
     emacs
     vscodium
-    # zed-editor
+    zed-editor
     # terminal utils
     wget
     curl
@@ -377,8 +377,7 @@ in
     # jupyter-all
     python3Full
     python312Packages.pip
-    hyprlandPlugins.hy3
-    # rustup
+    rustup
   ];
 
   fonts = {
