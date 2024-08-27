@@ -384,7 +384,9 @@ in
     # octaveFull
     # # ai
     # jupyter-all
-    python3Full
+    python312
+    python312Packages.pip
+    # python3Full
     rustup
   ];
 
