@@ -343,6 +343,8 @@ in
     ntfs3g
     udiskie
     simple-mtpfs
+    # xorg
+    xorg.xhost
     # browsers
     brave
     # messenger apps
@@ -357,13 +359,6 @@ in
     mpv
     vlc
     # note taking app
-    # stdenvNoCC
-    # autoPatchelfHook
-    # copyDesktopItems
-    # gtk3
-    # xdg-user-dirs
-    # keybinder3
-    # libnotify
     appflowy
     # desktop publicshing
     onlyoffice-bin_latest
