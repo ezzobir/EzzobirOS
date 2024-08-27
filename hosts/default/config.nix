@@ -363,22 +363,21 @@ in
     # texliveFull
     # lyx
     # # design
-    obs-studio
-    audacity
-    inkscape
-    gimp
-    kdePackages.kdenlive
-    natron
+    # obs-studio
+    # audacity
+    # inkscape
+    # gimp
+    # kdePackages.kdenlive
+    # natron
     # # math software
     # sage
     # R
     # octaveFull
     # # ai
     # jupyter-all
-    python312
-    python312Packages.pip
     # python3Full
-    rustup
+    # python312Packages.pip
+    # rustup
   ];
 
   fonts = {
