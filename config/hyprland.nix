@@ -21,7 +21,7 @@ with lib;
     enable = true;
     xwayland.enable = true;
     systemd.enable = true;
-    plugins = with pkgs; [ hyprlandPlugins.hy3 ];
+    # plugins = with pkgs; [ hyprlandPlugins.hy3 ];
     extraConfig =
       let
         modifier = "SUPER";
