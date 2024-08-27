@@ -310,7 +310,7 @@ in
     nixfmt-rfc-style
     libvirt
     swww
-    gnome.file-roller
+    file-roller
     swaynotificationcenter
     tree
     jq
@@ -566,7 +566,7 @@ in
   };
 
   # OpenGL
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
   };
 
