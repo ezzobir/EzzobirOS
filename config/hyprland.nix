@@ -146,7 +146,7 @@ with lib;
           bind = ${modifier},D,exec,rofi-launcher
           # bind = ${modifier},Y,exec, waybar &
           # bind = ${modifier}CONTROL,Y,exec, pkill waybar
-          bind = ${modifier},Y,exec, pkill waybar || waybar &
+          # bind = ${modifier},Y,exec, pkill waybar || waybar &
           bind = ${modifier}SHIFT,N,exec,swaync-client -rs
           bind = ${modifier},W,exec,${browser}
           bind = ${modifier}SHIFT,W,exec,web-search
