@@ -160,6 +160,7 @@ in
   };
 
   programs = {
+    xwayland.enable = true;
     firefox.enable = true;
     starship = {
       enable = true;
@@ -252,11 +253,6 @@ in
         thunar-volman
       ];
     };
-      # yazi = {
-      #   enable = true;
-      #   # plugins = with pkgs; [];
-      #   # settings.theme = {};
-      # };
   };
 
   nixpkgs.config.allowUnfree = true;
