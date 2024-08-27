@@ -366,7 +366,7 @@ in
     # obs-studio
     # audacity
     # inkscape
-    # gimp
+    gimp
     # kdePackages.kdenlive
     # natron
     # # math software
