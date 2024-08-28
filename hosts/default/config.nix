@@ -161,7 +161,7 @@ in
 
   programs = {
     xwayland.enable = true;
-    firefox.enable = true;
+    firefox.enable = false;
     starship = {
       enable = true;
       settings = {
@@ -345,6 +345,8 @@ in
     qalculate-gtk
     # browsers
     brave
+    librewolf
+    qutebrowser
     # messenger apps
     # discord
     telegram-desktop
