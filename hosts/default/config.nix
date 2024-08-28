@@ -368,7 +368,7 @@ in
     inkscape
     gimp
     kdePackages.kdenlive
-    natron
+    # natron
     # # math software
     # sage
     # R
