@@ -341,6 +341,8 @@ in
     simple-mtpfs
     # xorg
     xorg.xhost
+    # calculator
+    qalculate-gtk
     # browsers
     brave
     # messenger apps
