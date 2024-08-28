@@ -152,7 +152,8 @@ with lib;
           bind = ${modifier}SHIFT,W,exec,web-search
           bind = ${modifier}ALT,W,exec,wallsetter
           bind = ${modifier}CONTROL,E,exec,emopicker9000
-          bind = ${modifier},P,exec,screenshootin
+          # bind = ${modifier},P,exec,screenshootin
+          bind = ${modifier},P,exec,flameshot gui
           bind = ${modifier},C,exec,hyprpicker -a
           bind = ${modifier},T,exec,thunar
           bind = ${modifier},M,exec,spotify
