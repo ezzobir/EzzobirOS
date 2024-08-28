@@ -23,8 +23,7 @@ in
 
   boot = {
     # Kernel
-    # kernelPackages = pkgs.linuxPackages_zen;
-    kernelPackages = pkgs.linuxPackages;
+    kernelPackages = pkgs.linuxPackages_zen;
     # This is for OBS Virtual Cam Support
     kernelModules = [ "v4l2loopback" ];
     extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
