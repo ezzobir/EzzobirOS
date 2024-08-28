@@ -362,13 +362,13 @@ in
     typst
     # texliveFull
     # lyx
-    # # design
-    # obs-studio
-    # audacity
-    # inkscape
+    # design
+    obs-studio
+    audacity
+    inkscape
     gimp
-    # kdePackages.kdenlive
-    # natron
+    kdePackages.kdenlive
+    natron
     # # math software
     # sage
     # R
