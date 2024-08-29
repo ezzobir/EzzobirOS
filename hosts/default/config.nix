@@ -329,7 +329,10 @@ in
     base16-schemes
     # for screenshot
     swappy grim slurp
-    flameshot
+    flameshot.override {
+        enableWlrSupport = true;
+    }
+    # flameshot
     # sound controller
     pavucontrol
     spotify
