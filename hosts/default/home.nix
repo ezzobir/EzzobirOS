@@ -93,6 +93,14 @@ in
       };
       defaultApplications = {
         "x-scheme-handler/appflowy-flutter" = [ "appflowy-flutter.desktop" ];
+        "image/png" = [ "imv.desktop" ];
+        "image/jpeg" = [ "imv.desktop" ];
+        "image/jpg" = [ "imv.desktop" ];
+        "image/gif" = [ "imv.desktop" ];
+        "image/bmp" = [ "imv.desktop" ];
+        "image/tiff" = [ "imv.desktop" ];
+        "image/webp" = [ "imv.desktop" ];
+        "application/pdf" = [ "zathura.desktop" ];
       };
     };
     desktopEntries = {
