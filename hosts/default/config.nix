@@ -346,6 +346,8 @@ in
     xorg.xhost
     # calculator
     qalculate-gtk
+    # magnifier
+    kdePackages.kmag
     # browsers
     brave
     qutebrowser
