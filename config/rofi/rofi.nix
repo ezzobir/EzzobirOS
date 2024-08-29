@@ -65,7 +65,7 @@
               "dummy"
               "mode-switcher"
             ];
-            background-image = mkLiteral ''url("~/Pictures/wallpapers/ezzobir-wallpaper.jpg", width)'';
+            background-image = mkLiteral ''url("~/Pictures/Wallpapers/ezzobir-wallpaper.jpg", width)'';
           };
           "entry" = {
             enabled = true;
