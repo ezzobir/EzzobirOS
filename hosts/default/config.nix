@@ -384,8 +384,8 @@ in
     #*******Python********#
     python3Full
     python312Packages.pip
-    # python312Packages.numpy
-    # python312Packages.pillow
+    python312Packages.numpy
+    python312Packages.pillow
     #*******Rust**********#
     rustup
     #*********************#
