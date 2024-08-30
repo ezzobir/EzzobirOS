@@ -347,7 +347,7 @@ in
     # calculator
     qalculate-gtk
     # browsers
-    brave
+    # brave
     qutebrowser
     # messenger apps
     # discord
