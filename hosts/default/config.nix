@@ -393,7 +393,7 @@ in
     # # ai
     # jupyter-all
     #*******Python********#
-    python3Full
+    python312Full
     python312Packages.pip
     #*******Rust**********#
     rustup
