@@ -51,6 +51,7 @@ in
     plymouth.enable = true;
   };
 
+
   # Styling Options
   stylix = {
     enable = true;
@@ -123,6 +124,7 @@ in
     };
   };
 
+
   # Extra Module Options
   drivers.amdgpu.enable = false;
   drivers.nvidia.enable = false;
@@ -135,13 +137,16 @@ in
   vm.guest-services.enable = false;
   local.hardware-clock.enable = false;
 
+
   # Enable networking
   networking.networkmanager.enable = true;
   networking.hostName = host;
   networking.timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
 
+
   # Set your time zone.
   time.timeZone = "Africa/Algiers";
+
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -159,7 +164,9 @@ in
     LC_TIME = "en_US.UTF-8";
   };
 
+
   programs = {
+    nix-ld.enable = true;
     xwayland.enable = true;
     firefox.enable = true;
     starship = {
