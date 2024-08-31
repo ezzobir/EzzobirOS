@@ -344,6 +344,8 @@ in
     simple-mtpfs
     # xorg
     xorg.xhost
+    # devenv
+    devenv
     # calculator
     qalculate-gtk
     # browsers
@@ -374,7 +376,7 @@ in
     inkscape
     gimp
     kdePackages.kdenlive
-    natron
+    # natron
     # # math software
     # sage
     # R
