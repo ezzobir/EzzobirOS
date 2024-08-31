@@ -346,6 +346,8 @@ in
     xorg.xhost
     # devenv
     devenv
+    # aria 2
+    aria2
     # calculator
     qalculate-gtk
     # browsers
