@@ -166,7 +166,7 @@ in
 
 
   programs = {
-    nix-ld.enable = true;
+    # nix-ld.enable = true;
     xwayland.enable = true;
     firefox.enable = true;
     starship = {
