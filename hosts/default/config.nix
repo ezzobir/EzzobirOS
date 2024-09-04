@@ -381,7 +381,7 @@ in
     # lyx
     # design
     obs-studio
-    audacity
+    tenacity
     inkscape
     gimp
     kdePackages.kdenlive
