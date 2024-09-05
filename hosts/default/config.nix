@@ -339,7 +339,6 @@ in
     (flameshot.override {
         enableWlrSupport = true;
     })
-    # flameshot
     # sound controller
     pavucontrol
     spotify
