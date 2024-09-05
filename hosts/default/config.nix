@@ -355,6 +355,7 @@ in
     devenv
     # aria 2
     aria2
+    stremio
     # calculator
     qalculate-gtk
     # browsers
