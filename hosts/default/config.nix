@@ -348,6 +348,8 @@ in
     ntfs3g
     udiskie
     simple-mtpfs
+    # xprop clone for wayland
+    wlprop
     # xorg
     xorg.xhost
     # devenv
