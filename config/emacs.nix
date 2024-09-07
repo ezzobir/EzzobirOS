@@ -6,12 +6,13 @@
   programs.emacs = {
     enable = true;
     package = pkgs.emacs29-pgtk;
-    extraPackages = epkgs: [
-      epkgs.evil
-      epkgs.which-key
-      epkgs.general
-      epkgs.vterm
-      epkgs.treesit-grammars.with-all-grammars
+    extraPackages = epkgs: with epkgs; [
+      vterm
+      treesit-grammars.with-all-grammars
+      evil
+      which-key
+      general
+      company
     ];
     extraConfig = ''
 ;; UI Costomization
@@ -181,6 +182,13 @@
     "bn"  '(next-buffer :which-key "next buffer")
     "bp"  '(previous-buffer :which-key "previous buffer")
     "bd"  '(kill-this-buffer :which-key "kill buffer"))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; company
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Install and enable company mode
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; typst
