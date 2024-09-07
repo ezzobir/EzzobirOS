@@ -49,7 +49,7 @@
 ;; Set default font
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (set-face-attribute 'default nil
-                    ;; :family "Iosevka"
+                    :family "Iosevka"
                     :height 140
                     :weight 'normal
                     :width 'normal)
