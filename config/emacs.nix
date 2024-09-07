@@ -16,6 +16,9 @@
     extraConfig = ''
 ;; UI Costomization
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; disable welcome screen
+(setq inhibit-startup-message t)
+
 ;; Disable the menu bar
 (menu-bar-mode -1)
 
@@ -33,9 +36,6 @@
 
 ;; hl-line
 (global-hl-line-mode 1)
-
-;; disable welcome screen
-(setq inhibit-startup-message t)
 
 ;; delete comment lines from scratch buffer
 (setq initial-scratch-message nil)
