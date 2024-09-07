@@ -379,6 +379,8 @@ in
     onlyoffice-bin_latest
     libreoffice-fresh
     typst
+    tree-sitter-grammars.tree-sitter-typst
+    typst-lsp
     # texliveFull
     # lyx
     # design
