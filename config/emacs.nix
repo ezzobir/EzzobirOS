@@ -12,6 +12,8 @@
       evil
       which-key
       general
+      ivy
+      counsel
       company
     ];
     extraConfig = ''
@@ -91,6 +93,16 @@
 (setq display-line-numbers-type 'relative)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; ivy and counsel
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Enable Ivy mode
+(require 'ivy)
+(ivy-mode 1)
+
+;; Set up Counsel for file finding
+(require 'counsel)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Keybinding
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -112,7 +124,7 @@
 ;; Define file management keybindings
 (my/leader-keys
   "f"  '(:ignore t :which-key "file")
-  "ff" '(find-file :which-key "find file")
+  "ff" '(counsel-find-file :which-key "find file")
   "fs" '(save-buffer :which-key "save file")
   "fe" '(:ignore t :which-key "emacs")
   "fei" '(open-my-init-file :which-key "open my init.el")
