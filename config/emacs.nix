@@ -7,6 +7,9 @@
     enable = true;
     package = pkgs.emacs29-pgtk;
     extraPackages = epkgs: [
+      epkgs.evil
+      epkgs.which-key
+      epkgs.general
       epkgs.vterm
       epkgs.treesit-grammars.with-all-grammars
     ];
