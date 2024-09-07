@@ -213,8 +213,14 @@ in
     alacritty = {
       enable = true;
       package = pkgs.alacritty;
-      settings = {};
-    };
+      settings = {
+        window = {
+          padding = {
+            x = 10;  # Horizontal padding
+            y = 10;  # Vertical padding
+          };
+        };
+      };
      starship = {
             enable = true;
             package = pkgs.starship;
