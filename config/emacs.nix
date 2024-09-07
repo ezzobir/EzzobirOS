@@ -93,63 +93,62 @@
 
 ;; Keybinding
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; which-key package setup
-(use-package which-key
-  :ensure t
-  :config
-  (which-key-mode)
-  (setq which-key-idle-delay 1))
+;; Enable which-key
+(require 'which-key)
+(which-key-mode)
+
+;; Optional: Configure which-key appearance
+(setq which-key-idle-delay 1) ;; Delay in seconds before which-key pops up
 
 ;; general package setup
-(use-package general
-  :ensure t
-  :config
-  ;; Define prefix key for leader in Evil mode normal and visual states only
-  (general-create-definer my/leader-keys
-    :states '(normal visual)  ; Only in normal and visual states
-    :prefix "SPC")
+(require 'general)
 
-  ;; Define file management keybindings
-  (my/leader-keys
-    "f"  '(:ignore t :which-key "file")
-    "ff" '(find-file :which-key "find file")
-    "fs" '(save-buffer :which-key "save file")
-    "fe" '(:ignore t :which-key "emacs")
-    "fei" '(open-my-init-file :which-key "open my init.el")
-    "fj" '(dired-jump :which-key "dired")
-    "fr" '(recentf-open-files :which-key "recent files"))
+;; Define prefix key for leader in Evil mode normal and visual states only
+(general-create-definer my/leader-keys
+  :states '(normal visual)  ; Only in normal and visual states
+  :prefix "SPC")
 
-  ;; Define file management keybindings
-  (my/leader-keys
-    "d"  '(:ignore t :which-key "dired")
-    "dd"  '(dired :which-key "dired")
-    "do" '(dired-other-window :which-key "dired other window")
-    "dh" '(open-dired-home :which-key "dired home"))
+;; Define file management keybindings
+(my/leader-keys
+  "f"  '(:ignore t :which-key "file")
+  "ff" '(find-file :which-key "find file")
+  "fs" '(save-buffer :which-key "save file")
+  "fe" '(:ignore t :which-key "emacs")
+  "fei" '(open-my-init-file :which-key "open my init.el")
+  "fj" '(dired-jump :which-key "dired")
+  "fr" '(recentf-open-files :which-key "recent files"))
 
-  ;; Define buffer management keybindings
-  (my/leader-keys
-    "b"  '(:ignore t :which-key "buffer")
-    "bd" '(kill-this-buffer :which-key "delete buffer")
-    "bb" '(switch-to-buffer :which-key "list buffers")
-    "bn" '(next-buffer :which-key "next buffer")
-    "bp" '(previous-buffer :which-key "previous buffer")
-    "bM" '(delete-other-buffers :which-key "delete other buffers"))
+;; Define file management keybindings
+(my/leader-keys
+  "d"  '(:ignore t :which-key "dired")
+  "dd"  '(dired :which-key "dired")
+  "do" '(dired-other-window :which-key "dired other window")
+  "dh" '(open-dired-home :which-key "dired home"))
 
-  ;; Define window management keybindings
-  (my/leader-keys
-    "w"  '(:ignore t :which-key "window")
-    "wv" '(split-window-right :which-key "split right")
-    "wb" '(split-window-below :which-key "split below")
-    "wl" '(windmove-right :which-key "move right")
-    "wh" '(windmove-left :which-key "move left")
-    "wj" '(windmove-down :which-key "move down")
-    "wk" '(windmove-up :which-key "move up")
-    "wd" '(delete-window :which-key "delete window")
-    "wM" '(delete-other-windows :which-key "delete other windows"))
+;; Define buffer management keybindings
+(my/leader-keys
+  "b"  '(:ignore t :which-key "buffer")
+  "bd" '(kill-this-buffer :which-key "delete buffer")
+  "bb" '(switch-to-buffer :which-key "list buffers")
+  "bn" '(next-buffer :which-key "next buffer")
+  "bp" '(previous-buffer :which-key "previous buffer")
+  "bM" '(delete-other-buffers :which-key "delete other buffers"))
 
-  ;; Define keybinding to switch to last buffer
-  (my/leader-keys
-    "SPC" '(evil-switch-to-windows-last-buffer :which-key "last buffer")))
+;; Define window management keybindings
+(my/leader-keys
+  "w"  '(:ignore t :which-key "window")
+  "wv" '(split-window-right :which-key "split right")
+  "wb" '(split-window-below :which-key "split below")
+  "wl" '(windmove-right :which-key "move right")
+  "wh" '(windmove-left :which-key "move left")
+  "wj" '(windmove-down :which-key "move down")
+  "wk" '(windmove-up :which-key "move up")
+  "wd" '(delete-window :which-key "delete window")
+  "wM" '(delete-other-windows :which-key "delete other windows"))
+
+;; Define keybinding to switch to last buffer
+(my/leader-keys
+  "SPC" '(evil-switch-to-windows-last-buffer :which-key "last buffer"))
 
 ;; Ensure windmove commands are available
 (windmove-default-keybindings)
