@@ -64,10 +64,9 @@
 
 ;; Evil Mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(use-package evil
-  :ensure t
-  :config
-  (evil-mode 1))
+;; Enable Evil mode
+(require 'evil)
+(evil-mode 1)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -117,7 +116,6 @@
     "fs" '(save-buffer :which-key "save file")
     "fe" '(:ignore t :which-key "emacs")
     "fei" '(open-my-init-file :which-key "open my init.el")
-    "fer" '(reload-my-init-file :which-key "reload my init.el")
     "fj" '(dired-jump :which-key "dired")
     "fr" '(recentf-open-files :which-key "recent files"))
 
