@@ -210,6 +210,11 @@ in
         inactive_tab_font_style bold
       '';
     };
+    alacritty = {
+      enable = true;
+      package = pkgs.alacritty;
+      settings = {};
+    };
      starship = {
             enable = true;
             package = pkgs.starship;
