@@ -8,7 +8,6 @@
     enable = true;
     package =
       (pkgs.emacsWithPackagesFromUsePackage {
-        config = ../config/emacs/emacs.el;
         defaultInitFile = true;
         package = pkgs.emacs29-pgtk;
         extraPackages = epkgs: with epkgs; [
