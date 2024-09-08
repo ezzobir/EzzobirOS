@@ -60,7 +60,7 @@
                     ;; :family "Iosevka"
                     ;; :weight 'normal
                     ;; :width 'normal
-                    :height 140)
+                    :height 160)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
