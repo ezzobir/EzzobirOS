@@ -57,9 +57,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (set-face-attribute 'default nil
                     ;; :family "Iosevka"
-                    :height 180
-                    :weight 'normal
-                    :width 'normal)
+                    ;; :weight 'normal
+                    ;; :width 'normal
+                    :height 140)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
