@@ -16,6 +16,7 @@
       ivy
       counsel
       company
+      all-the-icons
     ];
     extraConfig = ''
 ;; UI Costomization
@@ -217,6 +218,19 @@
     "bn"  '(next-buffer :which-key "next buffer")
     "bp"  '(previous-buffer :which-key "previous buffer")
     "bd"  '(kill-this-buffer :which-key "kill buffer"))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; doom modeline
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Load all-the-icons
+(require 'all-the-icons)
+
+;; Load and enable doom-modeline
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+;; Customize doom-modeline
+(setq doom-modeline-height 15)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; company
