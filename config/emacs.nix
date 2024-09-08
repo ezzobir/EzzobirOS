@@ -15,6 +15,7 @@
       general
       ivy
       ivy-rich
+      swiper
       counsel
       company
       all-the-icons
