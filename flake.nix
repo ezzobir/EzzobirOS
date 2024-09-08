@@ -13,20 +13,25 @@
       url = "github:VonHeikemen/fine-cmdline.nvim";
       flake = false;
     };
+    emacs-overlay.url = "github:nix-community/emacs-overlay";
   };
 
   outputs =
-    { nixpkgs, home-manager, stylix, ... }@inputs:
+    { nixpkgs, home-manager, stylix, emacs-overlay, ... }@inputs:
     let
       system = "x86_64-linux";
       host = "default";
       username = "ezzobir";
+      pkgs = import nixpkgs {
+        overlays = [ emacs-overlay.overlay ];
+        inherit system;
+      };
     in
     {
       nixosConfigurations = {
         "${host}" = nixpkgs.lib.nixosSystem {
           specialArgs = {
-	    inherit system;
+	          inherit system;
             inherit inputs;
             inherit username;
             inherit host;
