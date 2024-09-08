@@ -19,6 +19,7 @@
       counsel
       company
       all-the-icons
+      doom-modeline
     ];
     extraConfig = ''
 ;; UI Costomization
@@ -142,7 +143,7 @@
 ;; recentf
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Enable evil mode in the recentf buffer
-(add-hook 'recentf-dialog-mode-hook 'evil-local-mode)
+;; (add-hook 'recentf-dialog-mode-hook 'evil-local-mode)
 
 (require 'recentf)
 (recentf-mode 1)
