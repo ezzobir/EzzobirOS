@@ -71,7 +71,7 @@
 
 ;; Enable Evil mode
 (require 'evil)
-(setq evil-want-keybinding nil)
+;; (setq evil-want-keybinding nil)
 (evil-mode 1)
 
 ;; Load and initialize evil-collection
@@ -126,6 +126,9 @@
 
 ;; Keybinding
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Make ESC quit prompts
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
 ;; Enable which-key
 (require 'which-key)
 (which-key-mode)
