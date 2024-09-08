@@ -70,6 +70,10 @@
 ;; Enable Evil mode
 (require 'evil)
 (evil-mode 1)
+
+;; Load and initialize evil-collection
+(require 'evil-collection)
+(evil-collection-init)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -112,6 +116,9 @@
 (require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
+
+;; Enable evil mode in the recentf buffer
+(add-hook 'recentf-dialog-mode-hook 'evil-local-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Keybinding
