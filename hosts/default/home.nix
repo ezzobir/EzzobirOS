@@ -28,6 +28,7 @@ in
     ../../config/waybar.nix
     ../../config/wlogout.nix
     ../../config/fastfetch
+    ../../config/emacs.nix
     ../../config/pdf-readers.nix
     ../../config/zellij.nix
   ];

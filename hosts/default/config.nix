@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  callPackage,
   host,
   username,
   options,
@@ -269,23 +268,6 @@ in
     mutableUsers = true;
   };
 
-  # emacs-overlay
-  services.emacs = {
-    enable = true;
-    package = pkgs.emacs-pgtk;
-  };
-  
-    nixpkgs.overlays = [
-      (import (builtins.fetchTarball {
-        url = "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
-      }))
-    ];
-
-
-
-
-
-
   environment.systemPackages = with pkgs; [
     git
     kitty
@@ -293,6 +275,7 @@ in
     # editors
     neovim
     neovide
+    emacs
     vscodium
     zed-editor
     # terminal utils
@@ -413,37 +396,12 @@ in
     # octaveFull
     # # ai
     # jupyter-all
-    # python
+    #*******Python********#
     python312Full
     python312Packages.pip
-    # rust
+    #*******Rust**********#
     rustup
-    # emacs
-    (emacsWithPackagesFromUsePackage {
-      config = ../../config/emacs/emacs.el;
-      defaultInitFile = true;
-      package = pkgs.emacs-pgtk;
-      alwaysEnsure = true;
-      alwaysTangle = true;
-
-      # Optionally provide extra packages not in the configuration file.
-      extraPackages = epkgs: with epkgs; [
-        vterm
-        treesit-grammars.with-all-grammars
-        evil
-        evil-collection
-        which-key
-        general
-        ivy
-        ivy-rich
-        swiper
-        counsel
-        company
-        all-the-icons
-        doom-modeline
-        nix-mode
-      ];
-    })
+    #*********************#
   ];
 
   fonts = {
