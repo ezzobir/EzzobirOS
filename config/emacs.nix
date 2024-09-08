@@ -68,10 +68,10 @@
 
 ;; Evil Mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(setq evil-want-keybinding nil)
 
 ;; Enable Evil mode
 (require 'evil)
+(setq evil-want-keybinding nil)
 (evil-mode 1)
 
 ;; Load and initialize evil-collection
