@@ -422,7 +422,7 @@ in
     (emacsWithPackagesFromUsePackage {
       config = ../../config/emacs/emacs.el;
       defaultInitFile = true;
-      package = pkgs.emacs-pgtk;
+      package = emacs-pgtk;
       alwaysEnsure = true;
       alwaysTangle = true;
 
