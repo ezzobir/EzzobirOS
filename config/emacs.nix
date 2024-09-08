@@ -56,8 +56,8 @@
 ;; Set default font
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (set-face-attribute 'default nil
-                    :family "Iosevka"
-                    :height 140
+                    ;; :family "Iosevka"
+                    :height 180
                     :weight 'normal
                     :width 'normal)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
