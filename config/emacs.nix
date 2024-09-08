@@ -14,6 +14,7 @@
       which-key
       general
       ivy
+      ivy-rich
       counsel
       company
       all-the-icons
@@ -103,9 +104,31 @@
 
 ;; ivy 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Enable Ivy mode
+;; Enable ivy-mode and configure key bindings
 (require 'ivy)
 (ivy-mode 1)
+
+;; Key bindings for ivy
+(global-set-key (kbd "C-s") 'swiper)
+
+;; Modify keybindings in ivy-minibuffer-map
+(define-key ivy-minibuffer-map (kbd "TAB") 'ivy-alt-done)
+(define-key ivy-minibuffer-map (kbd "C-l") 'ivy-alt-done)
+(define-key ivy-minibuffer-map (kbd "C-j") 'ivy-next-line)
+(define-key ivy-minibuffer-map (kbd "C-k") 'ivy-previous-line)
+
+;; Modify keybindings in ivy-switch-buffer-map
+(define-key ivy-switch-buffer-map (kbd "C-k") 'ivy-previous-line)
+(define-key ivy-switch-buffer-map (kbd "C-l") 'ivy-done)
+(define-key ivy-switch-buffer-map (kbd "C-d") 'ivy-switch-buffer-kill)
+
+;; Modify keybindings in ivy-reverse-i-search-map
+(define-key ivy-reverse-i-search-map (kbd "C-k") 'ivy-previous-line)
+(define-key ivy-reverse-i-search-map (kbd "C-d") 'ivy-reverse-i-search-kill)
+
+;; Enable ivy-rich after ivy
+(require 'ivy-rich)
+(ivy-rich-mode 1)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; counsel
