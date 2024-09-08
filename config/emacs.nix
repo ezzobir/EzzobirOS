@@ -73,7 +73,7 @@
 ;; Evil Mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; (setq evil-want-keybinding nil)
+(setq evil-want-keybinding nil)
 ;; Enable Evil mode
 (require 'evil)
 (evil-mode 1)
