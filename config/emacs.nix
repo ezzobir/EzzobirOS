@@ -10,6 +10,7 @@
       vterm
       treesit-grammars.with-all-grammars
       evil
+      evil-collection
       which-key
       general
       ivy
