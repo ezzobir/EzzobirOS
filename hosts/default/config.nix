@@ -287,6 +287,7 @@ in
     lolcat
     htop
     libvirt
+    libvterm
     lxqt.lxqt-policykit
     lm_sensors
     unzip
