@@ -281,13 +281,13 @@ in
     # terminal utils
     wget
     curl
+    cmake
     killall
     eza
     cmatrix
     lolcat
     htop
     libvirt
-    libvterm
     lxqt.lxqt-policykit
     lm_sensors
     unzip
