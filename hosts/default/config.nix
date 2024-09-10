@@ -384,6 +384,7 @@ in
     # texliveFull
     # lyx
     # design
+    vokoscreen-ng
     obs-studio
     tenacity
     inkscape
