@@ -210,7 +210,7 @@
       (use-package flycheck
         :defer t
         :diminish
-        :init (global-flycheck-mode))
+        :config (global-flycheck-mode))
 
       ;; Font
 
