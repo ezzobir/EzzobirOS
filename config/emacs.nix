@@ -223,8 +223,6 @@
     (tooltip-mode -1)
     ;; Disable the blinking cursor
     (blink-cursor-mode -1)
-    ;; disable welcome screen
-    (setq inhibit-startup-message t)
     ;; delete comment lines from scratch buffer
     (setq initial-scratch-message nil)
     ;; tab width
@@ -293,6 +291,15 @@
     (use-package rainbow-mode
       :hook 
       ((org-mode prog-mode) . rainbow-mode))
+
+    ;; recentf
+    (use-package recentf
+      :config
+      (recentf-mode 1)                         ; Enable recentf
+      (setq recentf-max-menu-items 25          ; Maximum number of items in the menu
+            recentf-max-saved-items 25        ; Maximum number of saved recent items
+            recentf-exclude '("/tmp/" "/ssh:")) ; Exclude certain directories
+      :bind ("C-x C-r" . counsel-recentf))     ; Bind counsel-recentf to C-x C-r
 
     ;; Shells and terminals
     ;;eshell
