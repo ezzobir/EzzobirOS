@@ -293,13 +293,11 @@
       ((org-mode prog-mode) . rainbow-mode))
 
     ;; recentf
-    (use-package recentf
-      :config
-      (recentf-mode 1)                         ; Enable recentf
-      (setq recentf-max-menu-items 25          ; Maximum number of items in the menu
-            recentf-max-saved-items 25        ; Maximum number of saved recent items
-            recentf-exclude '("/tmp/" "/ssh:")) ; Exclude certain directories
-      :bind ("C-x C-r" . counsel-recentf))     ; Bind counsel-recentf to C-x C-r
+    (require 'recentf)
+    (recentf-mode 1)                         ; Enable recentf
+    (setq recentf-max-menu-items 25          ; Maximum number of items in the menu
+          recentf-max-saved-items 25        ; Maximum number of saved recent items
+          recentf-exclude '("/tmp/" "/ssh:")) ; Exclude certain directories
 
     ;; Shells and terminals
     ;;eshell
