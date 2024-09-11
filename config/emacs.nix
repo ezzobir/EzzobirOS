@@ -29,6 +29,7 @@
       sudo-edit
       which-key
       dashboard
+      projectile
       company
       doom-modeline
       nix-mode
@@ -307,6 +308,11 @@
 
     ;; Source code block tag expansion
     (require 'org-tempo)
+
+    ;; projectile
+    (use-package projectile
+      :config
+      (projectile-mode 1))
 
     ;; Rainbow mode
     (use-package rainbow-mode
