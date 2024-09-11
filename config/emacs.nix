@@ -21,7 +21,7 @@
       counsel
       toc-org
       org-bullets
-      ainbow-mode
+      rainbow-mode
       eshell-syntax-highlighting
       vterm
       vterm-toggle
