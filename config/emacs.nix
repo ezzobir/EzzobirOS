@@ -28,6 +28,7 @@
       vterm-toggle
       sudo-edit
       which-key
+      dashboard
       company
       doom-modeline
       nix-mode
@@ -163,6 +164,26 @@
 
     (use-package all-the-icons-dired
       :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
+    ;; dashboard
+    (use-package dashboard
+      :init
+      (setq initial-buffer-choice 'dashboard-open)
+      (setq dashboard-set-heading-icons t)
+      (setq dashboard-set-file-icons t)
+      (setq dashboard-banner-logo-title "Emacs Is More Than A Text Editor!")
+      ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
+      (setq dashboard-startup-banner "/home/ezzobir/ezzobiros/config/face.jpg")  ;; use custom image as banner
+      (setq dashboard-center-content nil) ;; set to 't' for centered content
+      (setq dashboard-items '((recents . 5)
+                              (agenda . 5 )
+                              (bookmarks . 3)
+                              (projects . 3)
+                              (registers . 3)))
+      :custom
+      (dashboard-modify-heading-icons '((recents . "file-text")
+                                        (bookmarks . "book")))
+      :config
+      (dashboard-setup-startup-hook))
 
     ;; Font
 
