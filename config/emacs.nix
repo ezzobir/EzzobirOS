@@ -30,6 +30,9 @@
       which-key
       dashboard
       projectile
+      python-mode
+      lua-mode
+      flycheck
       company
       doom-modeline
       nix-mode
@@ -203,6 +206,12 @@
         :config
         (dashboard-setup-startup-hook))
 
+      ;; flycheck
+      (use-package flycheck
+        :defer t
+        :diminish
+        :init (global-flycheck-mode))
+
       ;; Font
 
       (set-face-attribute 'default nil
@@ -308,6 +317,10 @@
         (counsel-linux-app-format-function #'counsel-linux-app-format-function-name-only)
         :config
         (counsel-mode 1))
+
+      ;; Language support
+      (use-package python-mode)
+      (use-package lua-mode)
 
       ;; org mode
       (use-package org

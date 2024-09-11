@@ -401,6 +401,7 @@ in
     #*******Python********#
     python312Full
     python312Packages.pip
+    python312Packages.pylint
     #*******Rust**********#
     rustup
     #*********************#
