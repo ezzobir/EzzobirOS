@@ -405,6 +405,7 @@
 
       ;; Which key
       (use-package which-key
+      :diminish
       :config
         (which-key-mode 1)
         (setq which-key-side-window-location 'bottom
