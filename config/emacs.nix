@@ -8,6 +8,7 @@
     package = pkgs.emacs29-pgtk;
     extraPackages = epkgs: with epkgs; [
       treesit-grammars.with-all-grammars
+      use-package
       evil
       evil-collection
       evil-tutor
