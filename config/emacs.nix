@@ -63,7 +63,7 @@
       (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
       (require 'general)
-        (general-evil-setup)
+      (general-evil-setup)
       ;; set up 'SPC' as the global leader key
       (general-create-definer my/leader-keys
         :states '(normal insert visual emacs)
@@ -72,70 +72,70 @@
         :global-prefix "M-SPC") ;; access leader in insert mode
 
       (my/leader-keys
-          ";" '(comment-line :wk "Comment lines"))
+          ";" '(comment-line :which-key "Comment lines"))
       (my/leader-keys
-        "b" '(:ignore t :wk "buffer")
-        "bb" '(counsel-switch-buffer :wk "Switch buffer")
-        "bi" '(ibuffer :wk "list all buffers")
-        "bd" '(kill-this-buffer :wk "Kill this buffer")
-        "bn" '(next-buffer :wk "Next buffer")
-        "bp" '(previous-buffer :wk "Previous buffer")
-        "br" '(revert-buffer :wk "Reload buffer"))
+        "b" '(:ignore t :which-key "buffer")
+        "bb" '(counsel-switch-buffer :which-key "Switch buffer")
+        "bi" '(ibuffer :which-key "list all buffers")
+        "bd" '(kill-this-buffer :which-key "Kill this buffer")
+        "bn" '(next-buffer :which-key "Next buffer")
+        "bp" '(previous-buffer :which-key "Previous buffer")
+        "br" '(revert-buffer :which-key "Reload buffer"))
 
       (my/leader-keys
-          "e" '(:ignore t :wk "Eshell/Evaluate")    
-          "eb" '(eval-buffer :wk "Evaluate elisp in buffer")
-          "ed" '(eval-defun :wk "Evaluate defun containing or after point")
-          "ee" '(eval-expression :wk "Evaluate and elisp expression")
-          "eh" '(counsel-esh-history :wk "Eshell history")
-          "el" '(eval-last-sexp :wk "Evaluate elisp expression before point")
-          "er" '(eval-region :wk "Evaluate elisp in region")
-          "es" '(eshell :wk "Eshell"))
+          "e" '(:ignore t :which-key "Eshell/Evaluate")    
+          "eb" '(eval-buffer :which-key "Evaluate elisp in buffer")
+          "ed" '(eval-defun :which-key "Evaluate defun containing or after point")
+          "ee" '(eval-expression :which-key "Evaluate and elisp expression")
+          "eh" '(counsel-esh-history :which-key "Eshell history")
+          "el" '(eval-last-sexp :which-key "Evaluate elisp expression before point")
+          "er" '(eval-region :which-key "Evaluate elisp in region")
+          "es" '(eshell :which-key "Eshell"))
 
       (my/leader-keys
-          "f"  '(:ignore t :wk "file")
-          "ff" '(counsel-find-file :wk "Find file")
-          "fs" '(save-buffer :wk "save File")
-          "fr" '(counsel-recentf :wk "Find recent files")
-          "fe" '(:ignore t :wk "Emacs")
-          "fec" '(open-my-init-file :wk "Open my init.el")
-          "fer" '(reload-my-init-file :wk "Reload my init.el")
-          "fj" '(dired-jump :wk "Dired"))
+          "f"  '(:ignore t :which-key "file")
+          "ff" '(counsel-find-file :which-key "Find file")
+          "fs" '(save-buffer :which-key "save File")
+          "fr" '(counsel-recentf :which-key "Find recent files")
+          "fe" '(:ignore t :which-key "Emacs")
+          "fec" '(open-my-init-file :which-key "Open my init.el")
+          "fer" '(reload-my-init-file :which-key "Reload my init.el")
+          "fj" '(dired-jump :which-key "Dired"))
 
       (my/leader-keys
-          "w" '(:ignore t :wk "Windows")
+          "w" '(:ignore t :which-key "Windows")
           ;; Window splits
-          "wd" '(evil-window-delete :wk "Close window")
-          "wo" '(delete-other-windows :wk "delete other windows")
-          "wn" '(evil-window-new :wk "New window")
-          "ws" '(evil-window-split :wk "Horizontal split window")
-          "wv" '(evil-window-vsplit :wk "Vertical split window")
+          "wd" '(evil-window-delete :which-key "Close window")
+          "wo" '(delete-other-windows :which-key "delete other windows")
+          "wn" '(evil-window-new :which-key "New window")
+          "ws" '(evil-window-split :which-key "Horizontal split window")
+          "wv" '(evil-window-vsplit :which-key "Vertical split window")
           ;; Window motions
-          "wh" '(evil-window-left :wk "Window left")
-          "wj" '(evil-window-down :wk "Window down")
-          "wk" '(evil-window-up :wk "Window up")
-          "wl" '(evil-window-right :wk "Window right")
-          "ww" '(evil-window-next :wk "Goto next window")
+          "wh" '(evil-window-left :which-key "Window left")
+          "wj" '(evil-window-down :which-key "Window down")
+          "wk" '(evil-window-up :which-key "Window up")
+          "wl" '(evil-window-right :which-key "Window right")
+          "ww" '(evil-window-next :which-key "Goto next window")
           ;; Move Windows
-          "wH" '(buf-move-left :wk "Buffer move left")
-          "wJ" '(buf-move-down :wk "Buffer move down")
-          "wK" '(buf-move-up :wk "Buffer move up")
-          "wL" '(buf-move-right :wk "Buffer move right"))
+          "wH" '(buf-move-left :which-key "Buffer move left")
+          "wJ" '(buf-move-down :which-key "Buffer move down")
+          "wK" '(buf-move-up :which-key "Buffer move up")
+          "wL" '(buf-move-right :which-key "Buffer move right"))
 
       (my/leader-keys
-          "h" '(:ignore t :wk "Help")
-          "hf" '(describe-function :wk "Describe function")
-          "hv" '(describe-variable :wk "Describe variable")
-          "hk" '(describe-key :wk "Describe key"))
+          "h" '(:ignore t :which-key "Help")
+          "hf" '(describe-function :which-key "Describe function")
+          "hv" '(describe-variable :which-key "Describe variable")
+          "hk" '(describe-key :which-key "Describe key"))
 
       (my/leader-keys
-          "t" '(:ignore t :wk "Toggle")
-          "tn" '(display-line-numbers-mode :wk "Toggle line numbers")
-          "tl" '(visual-line-mode :wk "Toggle truncated lines")
-          "t v" '(vterm-toggle :wk "Toggle vterm"))
+          "t" '(:ignore t :which-key "Toggle")
+          "tn" '(display-line-numbers-mode :which-key "Toggle line numbers")
+          "tl" '(visual-line-mode :which-key "Toggle truncated lines")
+          "t v" '(vterm-toggle :which-key "Toggle vterm"))
 
       (my/leader-keys
-          "SPC" '(evil-switch-to-windows-last-buffer :wk "last buffer"))
+          "SPC" '(evil-switch-to-windows-last-buffer :which-key "last buffer"))
 
         ;; emacs-counsel-launcher
         (defun emacs-counsel-launcher ()
