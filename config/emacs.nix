@@ -60,13 +60,12 @@
       (use-package evil-tutor)
 
       ;; general
-
       (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
       (use-package general
-        :config
+        :init
         (general-evil-setup)
-
+        :config
         ;; set up 'SPC' as the global leader key
         (general-create-definer my/leader-keys
           :states '(normal insert visual emacs)
@@ -90,10 +89,10 @@
             "eb" '(eval-buffer :wk "Evaluate elisp in buffer")
             "ed" '(eval-defun :wk "Evaluate defun containing or after point")
             "ee" '(eval-expression :wk "Evaluate and elisp expression")
-            "eh" '(counsel-esh-history :which-key "Eshell history")
+            "eh" '(counsel-esh-history :wk "Eshell history")
             "el" '(eval-last-sexp :wk "Evaluate elisp expression before point")
             "er" '(eval-region :wk "Evaluate elisp in region")
-            "es" '(eshell :which-key "Eshell"))
+            "es" '(eshell :wk "Eshell"))
 
         (my/leader-keys
             "f"  '(:ignore t :wk "file")
@@ -109,7 +108,7 @@
             "w" '(:ignore t :wk "Windows")
             ;; Window splits
             "wd" '(evil-window-delete :wk "Close window")
-            "wo" '(delete-other-windows :which-key "delete other windows")
+            "wo" '(delete-other-windows :wk "delete other windows")
             "wn" '(evil-window-new :wk "New window")
             "ws" '(evil-window-split :wk "Horizontal split window")
             "wv" '(evil-window-vsplit :wk "Vertical split window")
@@ -138,7 +137,7 @@
             "t v" '(vterm-toggle :wk "Toggle vterm"))
 
         (my/leader-keys
-            "SPC" '(evil-switch-to-windows-last-buffer :which-key "last buffer"))
+            "SPC" '(evil-switch-to-windows-last-buffer :wk "last buffer"))
         )
 
         ;; emacs-counsel-launcher
@@ -265,6 +264,7 @@
       (ivy-rich-mode 1))
 
     (use-package all-the-icons-ivy-rich
+      :after ivy-rich
       :init (all-the-icons-ivy-rich-mode 1))
 
     (use-package counsel
