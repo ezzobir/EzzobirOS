@@ -382,8 +382,8 @@ in
     typst
     tree-sitter-grammars.tree-sitter-typst
     typst-lsp
-    # texliveFull
-    # lyx
+    texliveFull
+    lyx
     # design
     vokoscreen-ng
     obs-studio
