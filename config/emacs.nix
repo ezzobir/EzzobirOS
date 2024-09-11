@@ -34,6 +34,7 @@
       lua-mode
       flycheck
       company
+      company-box
       doom-modeline
       nix-mode
     ];
@@ -185,6 +186,24 @@
 
       (use-package all-the-icons-dired
         :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
+
+      ;; company
+      (use-package company
+        :defer 2
+        :diminish
+        :custom
+        (company-begin-commands '(self-insert-command))
+        (company-idle-delay .1)
+        (company-minimum-prefix-length 2)
+        (company-show-numbers t)
+        (company-tooltip-align-annotations 't)
+        (global-company-mode t))
+
+      (use-package company-box
+        :after company
+        :diminish
+        :hook (company-mode . company-box-mode))
+
       ;; dashboard
       (use-package dashboard
         :init
