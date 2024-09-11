@@ -344,7 +344,7 @@
 
     ;; Vterm
     (require 'vterm)
-    (setq shell-file-name "/etc/profiles/per-user/ezzobir/bin/fish"
+    (setq shell-file-name "/etc/profiles/per-user/ezzobir/bin/sh"
           vterm-max-scrollback 5000)
 
     (use-package vterm-toggle
