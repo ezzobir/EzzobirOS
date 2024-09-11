@@ -9,6 +9,7 @@
     extraPackages = epkgs: with epkgs; [
       vterm
       treesit-grammars.with-all-grammars
+      counsel
     ];
   };
 }
