@@ -92,6 +92,13 @@
         "br" '(revert-buffer :which-key "Reload buffer"))
 
       (my/leader-keys
+        "d" '(:ignore t :wk "Dired")
+        "dd" '(dired :wk "Open dired")
+        "dj" '(dired-jump :wk "Dired jump to current")
+        "dn" '(neotree-dir :wk "Open directory in neotree")
+        "dp" '(peep-dired :wk "Peep-dired"))
+
+      (my/leader-keys
         "e" '(:ignore t :which-key "Eshell/Evaluate")    
         "eb" '(eval-buffer :which-key "Evaluate elisp in buffer")
         "ed" '(eval-defun :which-key "Evaluate defun containing or after point")
@@ -108,8 +115,7 @@
         "fr" '(counsel-recentf :which-key "Find recent files")
         "fe" '(:ignore t :which-key "Emacs")
         "fec" '(open-my-init-file :which-key "Open my init.el")
-        "fer" '(reload-my-init-file :which-key "Reload my init.el")
-        "fj" '(dired-jump :which-key "Dired"))
+        "fer" '(reload-my-init-file :which-key "Reload my init.el"))
 
       (my/leader-keys
         "w" '(:ignore t :which-key "Windows")
