@@ -114,6 +114,7 @@
         "ff" '(counsel-find-file :which-key "Find file")
         "fs" '(save-buffer :which-key "save File")
         "fr" '(counsel-recentf :which-key "Find recent files")
+        "ft" '(neotree-toggle :wk "Toggle neotree file viewer")
         "fe" '(:ignore t :which-key "Emacs")
         "fec" '(open-my-init-file :which-key "Open my init.el")
         "fer" '(reload-my-init-file :which-key "Reload my init.el"))
