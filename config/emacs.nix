@@ -377,8 +377,8 @@
 
       ;; modeline
       (use-package doom-modeline
-        :init (doom-modeline-mode 1)
         :config
+        (doom-modeline-mode 1)
         (setq doom-modeline-height 35      ;; sets modeline height
               doom-modeline-bar-width 5    ;; sets right bar width
               doom-modeline-persp-name t   ;; adds perspective name to modeline
