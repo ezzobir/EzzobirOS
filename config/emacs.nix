@@ -493,7 +493,7 @@
         ;; Enable custom neotree theme (all-the-icons must be installed!)
         ;; (doom-themes-neotree-config)
         ;; Corrects (and improves) org-mode's native fontification.
-        (doom-themes-org-config))
+        ;; (doom-themes-org-config))
 
       ;; Transparency
       (add-to-list 'default-frame-alist '(alpha-background . 80)) ; For all new frames henceforth
