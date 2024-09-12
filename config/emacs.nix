@@ -422,6 +422,9 @@
             "fu" '(sudo-edit-find-file :wk "Sudo find file")
             "fU" '(sudo-edit :wk "Sudo edit file")))
 
+      ;; Transparency
+      (add-to-list 'default-frame-alist '(alpha-background . 90)) ; For all new frames henceforth
+
       ;; Which key
       (use-package which-key
       :diminish
