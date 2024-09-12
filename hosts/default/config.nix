@@ -370,6 +370,7 @@ in
     zathura
     sioyek
     # imager viewer
+    nsxiv
     imv
     # video player
     mpv
