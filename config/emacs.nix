@@ -38,6 +38,7 @@
       dired-open
       peep-dired
       neotree
+      doom-themes
       doom-modeline
       nix-mode
     ];
@@ -196,6 +197,9 @@
 
       (use-package all-the-icons-dired
         :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
+
+      ;; Backup
+      (setq backup-directory-alist '((".*" . "~/.Trash")))
 
       ;; company
       (use-package company
@@ -371,6 +375,15 @@
       (use-package python-mode)
       (use-package lua-mode)
 
+      ;; modeline
+      (use-package doom-modeline
+        :init (doom-modeline-mode 1)
+        :config
+        (setq doom-modeline-height 35      ;; sets modeline height
+              doom-modeline-bar-width 5    ;; sets right bar width
+              doom-modeline-persp-name t   ;; adds perspective name to modeline
+              doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
+
       ;; neotree
       (use-package neotree
         :config
@@ -469,6 +482,18 @@
           (my/leader-keys
             "fu" '(sudo-edit-find-file :wk "Sudo find file")
             "fU" '(sudo-edit :wk "Sudo edit file")))
+
+      ;; theme
+      (use-package doom-themes
+        :config
+        (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+              doom-themes-enable-italic t) ; if nil, italics is universally disabled
+        ;; Sets the default theme to load!!! 
+        (load-theme 'doom-gruvbox t)
+        ;; Enable custom neotree theme (all-the-icons must be installed!)
+        (doom-themes-neotree-config)
+        ;; Corrects (and improves) org-mode's native fontification.
+        (doom-themes-org-config))
 
       ;; Transparency
       (add-to-list 'default-frame-alist '(alpha-background . 80)) ; For all new frames henceforth
