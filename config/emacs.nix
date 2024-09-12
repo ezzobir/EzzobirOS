@@ -5,7 +5,8 @@
 
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs29-pgtk;
+    # package = pkgs.emacs29-pgtk;
+    package = pkgs.emacs-nox;
     extraPackages = epkgs: with epkgs; [
       treesit-grammars.with-all-grammars
       use-package
