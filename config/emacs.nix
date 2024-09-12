@@ -491,7 +491,7 @@
         ;; Sets the default theme to load!!! 
         (load-theme 'doom-gruvbox t)
         ;; Enable custom neotree theme (all-the-icons must be installed!)
-        (doom-themes-neotree-config)
+        ;; (doom-themes-neotree-config)
         ;; Corrects (and improves) org-mode's native fontification.
         (doom-themes-org-config))
 
