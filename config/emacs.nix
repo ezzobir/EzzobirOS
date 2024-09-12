@@ -233,7 +233,6 @@
         (setq dired-open-extensions '(("gif" . "nsxiv")
                                       ("jpg" . "imv")
                                       ("png" . "imv")
-                                      ;; ("pdf" . "zathura")
                                       ("mkv" . "mpv")
                                       ("mp4" . "mpv"))))
 
