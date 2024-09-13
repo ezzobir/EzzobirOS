@@ -7,6 +7,7 @@
     enable = true;
     package = pkgs.emacs29-pgtk;
     extraPackages = epkgs: with epkgs; [
+      treesit-grammars.with-all-grammars
       vterm
       vterm-toggle
     ];
