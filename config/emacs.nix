@@ -14,7 +14,7 @@
       ;; vterm
       (use-package vterm
       :config
-      (setq shell-file-name "/bin/sh"
+      (setq shell-file-name "/etc/profiles/per-user/ezzobir/bin/sh"
             vterm-max-scrollback 5000))
 
       ;; vterm-toggle
