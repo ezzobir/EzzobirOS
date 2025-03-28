@@ -1,0 +1,2 @@
+# EzzobirOS
+My NixOS configuration
